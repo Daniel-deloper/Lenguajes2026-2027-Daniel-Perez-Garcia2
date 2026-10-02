@@ -1,0 +1,333 @@
+
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #263238;
+
+    background:
+        radial-gradient(circle at 10% 20%, #ffe0f0 0, transparent 25%),
+        radial-gradient(circle at 90% 10%, #d9f7ff 0, transparent 25%),
+        radial-gradient(circle at 80% 90%, #e8ddff 0, transparent 30%),
+        linear-gradient(135deg, #f7f9ff, #eef7ff);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+
+body > div {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 45px;
+
+    background-color: rgba(255, 255, 255, 0.92);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(48, 63, 159, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    font-size: 2.8rem;
+    line-height: 1.2;
+
+    background: linear-gradient(
+        90deg,
+        #6a11cb,
+        #2575fc,
+        #00bcd4,
+        #00c853
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   MENÚ DE NAVEGACIÓN
+   ========================================= */
+
+body > div > p:first-of-type {
+    text-align: center;
+    margin: 20px 0 30px;
+    padding: 15px;
+
+    background: linear-gradient(
+        90deg,
+        #6a11cb,
+        #2575fc
+    );
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(37, 117, 252, 0.25);
+}
+
+body > div > p:first-of-type a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+body > div > p:first-of-type a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LÍNEAS SEPARADORAS
+   ========================================= */
+
+hr {
+    border: 0;
+    height: 3px;
+
+    margin: 35px 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #6a11cb,
+        #00bcd4,
+        transparent
+    );
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   APARTADOS
+   ========================================= */
+
+body > div > div {
+    position: relative;
+
+    margin: 35px 0;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f7f9ff
+    );
+
+    border-left: 7px solid #6a11cb;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+body > div > div:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 35px rgba(48, 63, 159, 0.15);
+}
+
+
+/* =========================================
+   TÍTULOS DE LOS APARTADOS
+   ========================================= */
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    color: #5e35b1;
+
+    position: relative;
+}
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin-top: 8px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #ff4081,
+        #7c4dff
+    );
+}
+
+
+/* =========================================
+   PÁRRAFOS
+   ========================================= */
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   ENLACES
+   ========================================= */
+
+a {
+    color: #5e35b1;
+
+    font-weight: bold;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4081;
+}
+
+
+/* =========================================
+   EFECTO PARA LOS APARTADOS AL LLEGAR
+   DESDE EL MENÚ
+   ========================================= */
+
+div:target {
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+
+    0% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 rgba(124, 77, 255, 0);
+    }
+
+    50% {
+        transform: scale(1.01);
+        box-shadow: 0 0 30px rgba(124, 77, 255, 0.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   NEGRITAS
+   ========================================= */
+
+b {
+    color: #e91e63;
+}
+
+
+/* =========================================
+   ANIMACIÓN DE ENTRADA
+   ========================================= */
+
+body > div {
+    animation: entrada 0.8s ease-out;
+}
+
+@keyframes entrada {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    body > div {
+        width: 94%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    body > div > p:first-of-type {
+        line-height: 2.5;
+    }
+
+    body > div > div {
+        padding: 20px;
+    }
+}
+
