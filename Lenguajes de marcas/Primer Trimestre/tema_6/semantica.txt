@@ -1,0 +1,127 @@
+Un recorrido por los animales
+
+Conoce cinco grupos del reino animal a través de sus características y hábitats.
+
+Explora las categorías:
+Mamíferos
+Aves
+Peces
+Anfibios
+Reptiles
+
+Cada sección agrupa una categoría y cada tarjeta es un artículo independiente sobre un animal. Las fotografías se presentan con figure y figcaption.
+
+Mamíferos
+
+Los mamíferos son vertebrados que, por lo general, tienen pelo y alimentan a sus crías con leche.
+
+(imagen del animal)
+Un perro, mamífero domesticado y compañero de las personas.
+Perro
+El perro es un mamífero domesticado que desciende del lobo. Convive con las personas desde hace miles de años.
+Su olfato y oído están muy desarrollados, y existen perros de tamaños y aspectos muy distintos.
+
+Gato
+El gato doméstico es un mamífero ágil, con garras retráctiles y una excelente visión en condiciones de poca luz.
+Se comunica mediante sonidos, posturas y movimientos de la cola, y también utiliza bigotes para orientarse.
+(imagen del animal)
+Un gato doméstico observando su entorno.
+
+(imagen del animal)
+El elefante, el animal terrestre más grande.
+Elefante
+El elefante es un mamífero herbívoro conocido por su gran tamaño, sus colmillos y su larga trompa.
+Vive en grupos sociales y usa la trompa para respirar, recoger alimento, beber agua y comunicarse.
+
+Aves
+
+Las aves son vertebrados con plumas. La mayoría tiene alas y pone huevos.
+
+(imagen del animal)
+El águila, un ave rapaz con una vista excepcional.
+Águila
+El águila es un ave rapaz que suele construir su nido en lugares altos, como acantilados o árboles.
+Sus garras fuertes y su pico curvado le ayudan a capturar y alimentarse de sus presas.
+
+Paloma
+La paloma es un ave que se ha adaptado a vivir tanto en el campo como en pueblos y ciudades.
+Se orienta muy bien durante sus desplazamientos y suele alimentarse de semillas y pequeños frutos.
+(imagen del animal)
+Una paloma, habitual en muchos entornos urbanos.
+
+(imagen del animal)
+El pingüino utiliza sus alas para nadar.
+Pingüino
+El pingüino es un ave marina que no puede volar y pasa gran parte de su vida en el agua.
+Sus alas funcionan como aletas para impulsarse al nadar, y sus plumas densas lo protegen del frío.
+
+Banner publicitario
+
+Peces
+
+Los peces viven en el agua, respiran principalmente mediante branquias y se desplazan con sus aletas.
+
+(imagen del animal)
+Las sardinas suelen desplazarse en grandes bancos.
+Sardina
+La sardina es un pez pequeño de cuerpo plateado que habita en aguas marinas.
+Forma bancos numerosos que se mueven juntos, lo que puede ayudarle a protegerse de los depredadores.
+
+Tiburón
+El tiburón es un pez cartilaginoso que vive en mares de todo el mundo. Hay especies de tamaños muy variados.
+Respira gracias a sus branquias y cuenta con sentidos que le ayudan a detectar alimento en el agua.
+(imagen del animal)
+Un tiburón desplazándose en el mar.
+
+(imagen del animal)
+El pez payaso vive asociado a las anémonas.
+Pez payaso
+El pez payaso es un pez marino de vivos colores, reconocible por sus franjas blancas y anaranjadas.
+Vive entre los tentáculos de ciertas anémonas, donde encuentra refugio frente a muchos depredadores.
+
+Anfibios
+
+Muchos anfibios comienzan su vida en el agua y, al crecer, también pueden vivir en tierra.
+
+(imagen del animal)
+La rana suele encontrarse cerca del agua.
+Rana
+La rana es un anfibio de piel húmeda y patas traseras largas, adaptadas para saltar y nadar.
+Su ciclo de vida suele empezar en el agua, donde nacen los renacuajos, que cambian al convertirse en adultos.
+
+Sapo
+El sapo es un anfibio de cuerpo robusto y piel generalmente más seca y rugosa que la de las ranas.
+Se alimenta de pequeños invertebrados y suele ser más activo durante la noche o en días húmedos.
+(imagen del animal)
+Un sapo camuflado entre la vegetación.
+
+(imagen del animal)
+La salamandra, un anfibio de cuerpo alargado.
+Salamandra
+La salamandra es un anfibio de cuerpo alargado y cola, con cuatro patas cortas.
+Prefiere los lugares húmedos y sombríos, ya que su piel necesita mantenerse hidratada.
+
+Reptiles
+
+Los reptiles son vertebrados de piel cubierta de escamas; la mayoría regula su temperatura con el ambiente.
+
+(imagen del animal)
+La serpiente se desplaza sin patas.
+Serpiente
+La serpiente es un reptil alargado que se desplaza reptando y no tiene patas.
+Muchas especies mudan su piel al crecer y utilizan la lengua para captar partículas del entorno.
+
+Tortuga
+La tortuga es un reptil que posee un caparazón protector unido a su esqueleto.
+Hay tortugas terrestres y acuáticas; sus patas y su forma varían según el ambiente en el que viven.
+(imagen del animal)
+La tortuga está protegida por su caparazón.
+
+(imagen del animal)
+El cocodrilo es un gran reptil semiacuático.
+Cocodrilo
+El cocodrilo es un reptil semiacuático de gran tamaño que habita en ríos, lagos y zonas pantanosas.
+Sus ojos y fosas nasales sobresalen del agua cuando permanece sumergido, al acecho de sus presas.
+
+Autor: Alumno/a de MEDAC · Lenguajes de Marcas
+Ejemplo educativo sobre el uso de etiquetas semánticas en HTML.

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semantica.css">
+    <meta name="”author”" content="”Daniel”" />
+    <title>Animales</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Un recorrido por los animales</h1>
+            <p>Conoce cinco grupos del reino animal a través de sus características y hábitats.</p>
+        </header>
+
+        <nav aria-label="Explora las categorías">
+            <strong>Explora las categorías:</strong><br>
+            <a href="#mamiferos">Mamíferos</a>
+            <a href="#aves">Aves</a>
+            <a href="#peces">Peces</a>
+            <a href="#anfibios">Anfibios</a>
+            <a href="#reptiles">Reptiles</a>
+        </nav>
+
+        <main>
+            <p>Cada sección agrupa una categoría y cada tarjeta es un artículo independiente sobre un animal. Las fotografías se presentan con <code>figure</code> y <code>figcaption</code>.</p>
+
+            <section id="mamiferos" aria-labelledby="titulo-mamiferos">
+                <h2 id="titulo-mamiferos">Mamíferos</h2>
+                <p>Los mamíferos son vertebrados que, por lo general, tienen pelo y alimentan a sus crías con leche.</p>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Perro en su entorno natural" loading="lazy">
+                        <figcaption>Un perro, mamífero domesticado y compañero de las personas.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Perro</h3>
+                        <p>El perro es un mamífero domesticado que desciende del lobo. Convive con las personas desde hace miles de años.</p>
+                        <p>Su olfato y oído están muy desarrollados, y existen perros de tamaños y aspectos muy distintos.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80" alt="Gato en su entorno natural" loading="lazy">
+                        <figcaption>Un gato doméstico observando su entorno.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Gato</h3>
+                        <p>El gato doméstico es un mamífero ágil, con garras retráctiles y una excelente visión en condiciones de poca luz.</p>
+                        <p>Se comunica mediante sonidos, posturas y movimientos de la cola, y también utiliza bigotes para orientarse.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=900&q=80" alt="Elefante en su entorno natural" loading="lazy">
+                        <figcaption>El elefante, el animal terrestre más grande.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Elefante</h3>
+                        <p>El elefante es un mamífero herbívoro conocido por su gran tamaño, sus colmillos y su larga trompa.</p>
+                        <p>Vive en grupos sociales y usa la trompa para respirar, recoger alimento, beber agua y comunicarse.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="aves" aria-labelledby="titulo-aves">
+                <h2 id="titulo-aves">Aves</h2>
+                <p>Las aves son vertebrados con plumas. La mayoría tiene alas y pone huevos.</p>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=900&q=80" alt="Águila en su entorno natural" loading="lazy">
+                        <figcaption>El águila, un ave rapaz con una vista excepcional.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Águila</h3>
+                        <p>El águila es un ave rapaz que suele construir su nido en lugares altos, como acantilados o árboles.</p>
+                        <p>Sus garras fuertes y su pico curvado le ayudan a capturar y alimentarse de sus presas.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=900&q=80" alt="Paloma en su entorno natural" loading="lazy">
+                        <figcaption>Una paloma, habitual en muchos entornos urbanos.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Paloma</h3>
+                        <p>La paloma es un ave que se ha adaptado a vivir tanto en el campo como en pueblos y ciudades.</p>
+                        <p>Se orienta muy bien durante sus desplazamientos y suele alimentarse de semillas y pequeños frutos.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&w=900&q=80" alt="Pingüino en su entorno natural" loading="lazy">
+                        <figcaption>El pingüino utiliza sus alas para nadar.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Pingüino</h3>
+                        <p>El pingüino es un ave marina que no puede volar y pasa gran parte de su vida en el agua.</p>
+                        <p>Sus alas funcionan como aletas para impulsarse al nadar, y sus plumas densas lo protegen del frío.</p>
+                    </div>
+                </article>
+                <aside aria-label="Banner publicitario">
+                    Banner publicitario
+                </aside>
+            </section>
+
+            <section id="peces" aria-labelledby="titulo-peces">
+                <h2 id="titulo-peces">Peces</h2>
+                <p>Los peces viven en el agua, respiran principalmente mediante branquias y se desplazan con sus aletas.</p>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=80" alt="Sardina en su entorno natural" loading="lazy">
+                        <figcaption>Las sardinas suelen desplazarse en grandes bancos.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Sardina</h3>
+                        <p>La sardina es un pez pequeño de cuerpo plateado que habita en aguas marinas.</p>
+                        <p>Forma bancos numerosos que se mueven juntos, lo que puede ayudarle a protegerse de los depredadores.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=900&q=80" alt="Tiburón en su entorno natural" loading="lazy">
+                        <figcaption>Un tiburón desplazándose en el mar.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Tiburón</h3>
+                        <p>El tiburón es un pez cartilaginoso que vive en mares de todo el mundo. Hay especies de tamaños muy variados.</p>
+                        <p>Respira gracias a sus branquias y cuenta con sentidos que le ayudan a detectar alimento en el agua.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&w=900&q=80" alt="Pez payaso en su entorno natural" loading="lazy">
+                        <figcaption>El pez payaso vive asociado a las anémonas.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Pez payaso</h3>
+                        <p>El pez payaso es un pez marino de vivos colores, reconocible por sus franjas blancas y anaranjadas.</p>
+                        <p>Vive entre los tentáculos de ciertas anémonas, donde encuentra refugio frente a muchos depredadores.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="anfibios" aria-labelledby="titulo-anfibios">
+                <h2 id="titulo-anfibios">Anfibios</h2>
+                <p>Muchos anfibios comienzan su vida en el agua y, al crecer, también pueden vivir en tierra.</p>
+                <article>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_kGwcmciJY9I66KahgKYlMZy54x312B_-VDWvilg28w&s" alt="Rana en su entorno natural" loading="lazy">
+                        <figcaption>La rana suele encontrarse cerca del agua.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Rana</h3>
+                        <p>La rana es un anfibio de piel húmeda y patas traseras largas, adaptadas para saltar y nadar.</p>
+                        <p>Su ciclo de vida suele empezar en el agua, donde nacen los renacuajos, que cambian al convertirse en adultos.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8nt05W4EW01YeqQwlHMbwFsgIrT9HlYNJG4oUcZKaQ&s=10" alt="Sapo en su entorno natural" loading="lazy">
+                        <figcaption>Un sapo camuflado entre la vegetación.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Sapo</h3>
+                        <p>El sapo es un anfibio de cuerpo robusto y piel generalmente más seca y rugosa que la de las ranas.</p>
+                        <p>Se alimenta de pequeños invertebrados y suele ser más activo durante la noche o en días húmedos.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2h47GFh2okXF6BqcG5Kmhf5W0KEo683YKuLKMjomgg&s=10" alt="Salamandra en su entorno natural" loading="lazy">
+                        <figcaption>La salamandra, un anfibio de cuerpo alargado.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Salamandra</h3>
+                        <p>La salamandra es un anfibio de cuerpo alargado y cola, con cuatro patas cortas.</p>
+                        <p>Prefiere los lugares húmedos y sombríos, ya que su piel necesita mantenerse hidratada.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="reptiles" aria-labelledby="titulo-reptiles">
+                <h2 id="titulo-reptiles">Reptiles</h2>
+                <p>Los reptiles son vertebrados de piel cubierta de escamas; la mayoría regula su temperatura con el ambiente.</p>
+                <article>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdIQdXRANo2esjEUAinxISdomjUcX6eDWpV1xPtd6XA&s=10" alt="Serpiente en su entorno natural" loading="lazy">
+                        <figcaption>La serpiente se desplaza sin patas.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Serpiente</h3>
+                        <p>La serpiente es un reptil alargado que se desplaza reptando y no tiene patas.</p>
+                        <p>Muchas especies mudan su piel al crecer y utilizan la lengua para captar partículas del entorno.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=900&q=80" alt="Tortuga en su entorno natural" loading="lazy">
+                        <figcaption>La tortuga está protegida por su caparazón.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Tortuga</h3>
+                        <p>La tortuga es un reptil que posee un caparazón protector unido a su esqueleto.</p>
+                        <p>Hay tortugas terrestres y acuáticas; sus patas y su forma varían según el ambiente en el que viven.</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Cocodrilo en su entorno natural" loading="lazy">
+                        <figcaption>El cocodrilo es un gran reptil semiacuático.</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Cocodrilo</h3>
+                        <p>El cocodrilo es un reptil semiacuático de gran tamaño que habita en ríos, lagos y zonas pantanosas.</p>
+                        <p>Sus ojos y fosas nasales sobresalen del agua cuando permanece sumergido, al acecho de sus presas.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Autor:</strong> Alumno/a de MEDAC · Lenguajes de Marcas</p>
+            <p>Ejemplo educativo sobre el uso de etiquetas semánticas en HTML.</p>
+        </footer>
+    </div>
+</body>
+</html>
+

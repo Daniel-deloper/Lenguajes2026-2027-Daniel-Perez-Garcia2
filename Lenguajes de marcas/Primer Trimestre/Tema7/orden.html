@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué regla CSS se aplica?</title>
+
+    <!-- 1. CSS EXTERNO: se carga desde un archivo independiente -->
+    <link rel="stylesheet" href="CSS/orden.css">
+
+    <!-- 2. CSS INTERNO: puedes modificar estas reglas en clase -->
+    <style>
+        /* MISMO selector que en la hoja externa: gana por aparecer después. */
+        .titulo {
+            color: green;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 class="titulo">¿Qué regla CSS se aplica?</h1>
+            <h1 class="titulo" style="color: cyan; font-size: 40px;">¿Qué regla CSS se aplica?</h1>
+
+        </header>
+
+        <main>
+            <section>
+                <h3>Las tres reglas que afectan al titulo</h3>
+                <ol>
+                    <li>
+                        <strong>CSS externo</strong>
+
+                    </li>
+                    <li>
+                        <strong>CSS interno</strong>
+                    </li>
+                    <li>
+                        <strong>CSS en línea</strong>
+                    </li>
+                </ol>
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Actividad educativa · Lenguajes de Marcas · CSS</p>
+        </footer>
+    </div>
+</body>
+
+</html>

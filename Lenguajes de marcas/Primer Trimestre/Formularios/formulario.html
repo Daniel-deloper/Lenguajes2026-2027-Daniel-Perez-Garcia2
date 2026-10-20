@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos_formularios.css">
+  <title>Tema 05. Estilo. Tablas y Formularios HTML</title>
+</head>
+<style>
+</style>
+<body>
+  <form name="formulario" action="procesar.php" method="get"></form>
+  <h1>Tema 05. Estilo. Tablas y Formularios HTML</h1>
+  <hr>
+  <h2>Ejercicio con formularios</h2>
+
+  <table>
+    <tr>
+
+      <td>
+        <h3>Formulario de contacto</h3>
+        <form>
+          <label>Nombre:</label><br>
+          <input type="text" name="nombre"><br><br>
+
+          <label>Email:</label><br>
+          <input type="email" name="email"><br><br>
+
+          <label>Asunto:</label><br>
+          <input type="text" name="asunto"><br><br>
+
+          <label>Comentarios:</label><br>
+          <textarea name="comentarios" rows="5" cols="30"></textarea><br><br>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </td>
+
+
+      <td>
+        <h3>Formulario de registro al curso</h3>
+        <form>
+          <label>Nombre completo: (requerido)</label><br>
+          <input type="text" name="nombre" required><br><br>
+
+          <label>Correo electrónico: (requerido)</label><br>
+          <input type="email" name="correo" required><br><br>
+
+          <label>Edad:</label><br>
+          <input type="number" name="edad" min="10" max="99"><br><br>
+
+          <label>Curso de interés:</label><br>
+          <select name="curso">
+            <option>Informática básica</option>
+            <option>Diseño web</option>
+            <option>Programación</option>
+          </select><br><br>
+
+          <label>Turno preferido:</label><br>
+          <input type="radio" name="turno" value="mañana"> Mañana<br>
+          <input type="radio" name="turno" value="tarde"> Tarde<br><br>
+
+          <input type="checkbox" name="condiciones"> Acepto las condiciones del curso<br><br>
+
+          <label>Comentarios adicionales:</label><br>
+          <textarea name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+          <input type="submit" value="Enviar registro">
+        </form>
+      </td>
+
+      <td>
+        <h3>Formulario de pedido</h3>
+        <form>
+          <label>Nombre del cliente:</label><br>
+          <input type="text" name="cliente"><br><br>
+
+          <label>Correo electrónico:</label><br>
+          <input type="email" name="correo"><br><br>
+
+          <label>Fecha deseada de entrega:</label><br>
+          <input type="date" name="fecha"><br><br>
+
+          <label>Color del producto:</label><br>
+          <input type="color" name="color"><br><br>
+
+          <label>Cantidad (1 a 10):</label><br>
+          <input type="range" name="cantidad" min="1" max="10"><br><br>
+
+          <label>Accesorios adicionales:</label><br>
+          <select name="accesorios" multiple size="4">
+            <option>Funda protectora</option>
+            <option>Batería adicional</option>
+            <option>Soporte de mesa</option>
+            <option>Kit de limpieza</option>
+          </select><br><br>
+
+          <input type="checkbox" name="terminos"> Acepto los términos del pedido<br><br>
+
+          <label>Comentarios o instrucciones especiales:</label><br>
+          <textarea name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+          <input type="submit" value="Enviar pedido">
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+
+
+</html>

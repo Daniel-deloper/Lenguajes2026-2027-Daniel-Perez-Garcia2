@@ -1,0 +1,164 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.5;
+}
+
+main { width: min(92%, 760px); margin: 40px auto; }
+
+/* ===== Formularios ===== */
+form {
+    
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    width: 1000px;
+}
+
+fieldset {
+    border: 1px solid #d8e0e8;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+}
+
+legend { padding: 0 10px; font-weight: bold; color: #315a7d; }
+
+label { display: block; margin-bottom: 7px; font-weight: bold; }
+.form-group { margin-bottom: 18px; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #c7d1db;
+    border-radius: 8px;
+    background: #fff;
+    color: #263238;
+    font: inherit;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4d8ac0;
+    box-shadow: 0 0 0 3px rgba(77,138,192,.15);
+}
+
+textarea { min-height: 120px; resize: vertical; }
+input::placeholder, textarea::placeholder { color: #8a98a6; }
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #315a7d;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: normal;
+}
+
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button, input[type="submit"] { background: #315a7d; color: white; }
+button:hover, input[type="submit"]:hover { background: #244762; }
+input[type="reset"] { background: #e8edf2; color: #34444f; }
+input[type="reset"]:hover { background: #d9e1e8; }
+
+.botones { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+input[type="file"] { padding: 9px; background: #f8fafc; }
+input[type="range"] { padding: 0; }
+input[type="color"] { width: 60px; height: 42px; padding: 3px; }
+input:disabled, select:disabled, textarea:disabled { background: #eef1f4; cursor: not-allowed; }
+
+/* ===== Página de respuesta de procesar.php ===== */
+.pagina-respuesta {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #eef4f9, #f8fbfd);
+}
+
+.pagina-respuesta main { width: min(92%, 720px); margin: 0 auto; }
+
+.respuesta {
+    background: #fff;
+    padding: 42px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,.10);
+}
+
+.icono-respuesta {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e5f4ea;
+    color: #287044;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.respuesta h1 { margin-bottom: 8px; color: #263f52; }
+.subtitulo { margin-top: 0; color: #657784; }
+
+.datos-recibidos {
+    margin-top: 28px;
+    text-align: left;
+    border: 1px solid #e0e7ed;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.dato {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-bottom: 1px solid #e0e7ed;
+}
+.dato:last-child { border-bottom: 0; }
+.nombre-variable, .valor-variable { padding: 13px 16px; }
+.nombre-variable { background: #f1f5f8; font-weight: bold; color: #315a7d; }
+.valor-variable { overflow-wrap: anywhere; }
+
+.mensaje-vacio {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #fff5df;
+    color: #785a20;
+}
+
+.nota { margin: 25px 0 0; font-size: .85rem; color: #8796a1; }
+
+@media (max-width: 600px) {
+    form, .respuesta { padding: 24px; }
+    .dato { grid-template-columns: 1fr; }
+    .nombre-variable { padding-bottom: 5px; }
+    .valor-variable { padding-top: 5px; }
+}

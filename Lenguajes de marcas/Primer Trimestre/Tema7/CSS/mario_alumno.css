@@ -1,0 +1,216 @@
+css
+/* =========================================
+   1. SELECTOR UNIVERSAL
+   Selecciona TODOS los elementos de la página.
+   ========================================= */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. SELECTOR DE ELEMENTO
+   Selecciona todos los elementos <p>.
+   ========================================= */
+
+p {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   margin-bottom: 10px;
+}
+
+
+/* =========================================
+   3. SELECTOR DE CLASE
+   Selecciona los elementos con class="contenedor".
+   ========================================= */
+
+.contenedor {
+   width: 90%;
+   max-width: 1100px;
+   margin: 20px auto;
+   background-color: rgb(0, 0, 0);
+   border: 10px solid rgb(250, 0, 0);
+   border-radius: 15px;
+}
+
+
+/* =========================================
+   4. SELECTOR DE IDENTIFICADOR (ID)
+   Selecciona el elemento con id="inicio".
+   ========================================= */
+
+#inicio {
+   background-color: #f3bb05;
+   padding: 20px;
+   border: 5px solid rgb(0, 255, 21);
+   border-radius: 10px;
+}
+
+
+/* =========================================
+   5. SELECTOR DE AGRUPACIÓN
+   Aplica los mismos estilos a <h1> y <p>.
+   ========================================= */
+
+h1,
+p {
+   color: #000000;
+}
+
+
+/* =========================================
+   6. SELECTOR DESCENDIENTE
+   Selecciona TODOS los <p> que estén dentro
+   de cualquier <div>.
+   ========================================= */
+
+div p {
+   padding: 5px;
+}
+
+
+/* =========================================
+   7. SELECTOR DE HIJO DIRECTO
+   Selecciona los <p> cuyo padre inmediato
+   sea un <div>.
+   ========================================= */
+
+div>p {
+   background-color: #00552a;
+}
+
+
+/* =========================================
+   8. SELECTOR DE ELEMENTO + CLASE
+   Selecciona únicamente los <div> que tengan
+   class="contenedor".
+   ========================================= */
+
+div.contenedor {
+   box-shadow: 0 4px 10px #5900a1;
+}
+
+
+/* =========================================
+   ESTILOS ADICIONALES PARA LA WEB DE MARIO
+   ========================================= */
+
+
+
+header {
+   background-color: #b2310e;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   padding: 30px 20px;
+}
+
+header h1 {
+   color: rgb(2, 250, 64);
+   font-size: 36px;
+   margin-bottom: 10px;
+}
+
+header p {
+   color: rgb(251, 252, 251);
+   font-size: 18px;
+}
+
+
+
+nav {
+   background-color: #56042c;
+   padding: 15px;
+   margin-top: 20px;
+   border-radius: 10px;
+   border: 5px solid #000000;
+}
+
+nav a {
+   color: rgb(48, 132, 221);
+   text-decoration: none;
+   font-weight: bold;
+   margin: 10px;
+}
+
+nav a:hover {
+   color: #130b0b;
+   text-decoration: underline;
+}
+
+
+
+main {
+   padding: 20px;
+}
+
+section {
+   margin-bottom: 25px;
+   padding: 20px;
+}
+
+section h2 {
+   color: #ff00aa;
+   margin-bottom: 15px;
+   border-bottom: 2px solid #146b32;
+   padding-bottom: 8px;
+}
+
+
+
+article {
+   background-color: #2f00ff;
+   border: 2px solid #000000;
+   border-left: 6px solid #000000;
+   border-radius: 10px;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+article h3 {
+   color: #08f35a;
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+/* Imágenes */
+
+figure {
+   text-align: center;
+   margin: 15px;
+}
+
+figure img {
+   width: 250px;
+   height: 250px;
+   max-width: 100%;
+   object-fit: contain;
+   border: 3px solid #04032b;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+figcaption {
+   color: #1c0404;
+   font-style: italic;
+   margin-top: 8px;
+}
+
+/* Pie de página */
+
+footer {
+   background-color: #925a07;
+   color: rgb(245, 244, 244);
+   text-align: center;
+   padding: 20px;
+}
+
+footer p {
+   color: rgb(219, 211, 211);
+   margin: 5px;
+}
+
+

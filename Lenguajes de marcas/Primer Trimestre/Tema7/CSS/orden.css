@@ -1,0 +1,18 @@
+/*
+  1. HOJA DE ESTILO EXTERNA
+ Se aplica en primer lugar, ya que es la primera hoja de estilo que se carga en el documento HTML.
+  
+*/
+*{
+    color: pink 
+
+}
+body {
+    color: blue;
+    width: min(100%, 1000px);
+    margin: 0 auto;
+}
+.titulo {
+    color: purple ; 
+    font-size: 30px;
+}

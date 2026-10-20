@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="”author”" content="”Daniel”" />
+    <title>Tema 2 | HTML</title>
+    <link rel="stylesheet" href="Estillo.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <h1>Tema<span>2</span></h1>
+            <p>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="Proyecto.html">Inicio</a>
+            <a href="tema1.html">Tema 1</a>
+            <a href="tema2.html" class="activo">Tema 2</a>
+            <a href="tema3.html">Tema 3</a>
+            <a href="tema4.html">Tema 4</a>
+            <a href="tema5.html">Tema 5</a>
+            <a href="tema6.html">Tema 6</a>
+            <a href="tema7.html">Tema 7</a>
+            <a href="tema8.html">Tema 8</a>
+            <a href="tema9.html">Tema 9</a>
+        </div>
+    </nav>
+
+    <main class="contenedor contenido-tema">
+
+        <p class="etiqueta">TEMA 02</p>
+
+        <h2>Introducción al documento HTML</h2>
+
+        <h3>Objetivo general</h3>
+        <p>
+        <ul>
+            <li>Conocer la sintaxis de HTML.</li>
+            <li>Identificar elementos del documento HTML.</li>
+            <li>Concepto de hypertexto</li>
+            <li>Estructura de un sitio web</li>
+        </ul>
+        </p>
+
+        <h3>¿Qué es HTML?</h3>
+        <h4>HTML (HyperText Markup Language)</h4>
+        <p>Es el lenguaje de marcas más extendido y la base del World Wide Web</p>
+        <ul>
+            <li>Usa las extensiones .html y .htm</li>
+        </ul>
+
+        <h3>Modelo cliente-servidor</h3>
+        <p>
+        <ul>
+            <li>HTTP</li>
+            <li>URL</li>
+            <li>HTML</li>
+        </ul>
+        </p>
+
+        <h3>Editores y Navegadores</h3>
+        <p>
+        <ul>
+            <li>Editores</li>
+            <p>Sisrven para crear página</p>
+            <li>Navegaroes</li>
+            <p>Sirven para visualizar las páginas</p>
+        </ul>
+        </p>
+
+        <h3>Conceptos HTML fundamentales</h3>
+
+        <h3>Ejemplo de HTML</h3>
+        <div class="bloque-codigo">
+            <pre><code>&lt;h1&gt;Las etiquetas&lt;/h1&gt;
+            <p><ul><li>Etiquetas siempre emparejadas<pre><code>&lt;p&gt;texto&lt;/p&gt;</li>
+                    <li>El símbolo / es el cierre.</li>
+                    <li>Los espacios en blanco no aportan NADA</li>
+                    <li>Las líneas en blanco no aportan NADA</li>
+                    <li>Las etiquetas se pueden animar</li>
+                    <li>Hay etiquetas que no necesitan cerrarse</li>
+                    <li>Las etiquetas pueden tener atributos</li>
+                    </div>
+                </ul>
+            </p>
+        
+
+        <h3>Los atributos</h3>
+        <div class="bloque-codigo">
+        <pre><code>&lt;img src="imagen.jpg" alt="Texto"&gt;
+            </div>
+        <p>
+            <ul>
+                <li>Especifican una caracteristica de la etiqueta</li>
+                <li>GENERALES (por ejemplo id o class). Para todas las etiquetas</li>
+                <li>ESPECIFICOS (src, witdh, height). Según tipo de etiqueta</li>
+            </ul>
+        </p>
+
+        <h3>Los elementos. Sintaxis de HTML</h3>
+        <div class="bloque-codigo">
+            <pre><code>&lt;a href="contenido/archivo1.html"&gt;Archivo1&lt;/a&gt;
+        </div>
+        <p>
+            <ul>
+                <li>Es la etiqueta + atributos + información</li>
+                <li>En el navegador forman el DOM. (Document Object Mode)</li>
+                <li>Algundos no necesitan cerrarse. Ej &lt;img&gt; &lt;br&gt;</li>
+                <li>Dos tipos:</li>
+                    <ul>
+                        <li>Inline. En línea</li>
+                        <li>Block. De bloque</li>
+                    </ul>
+            </ul>
+        </p>
+
+        <h3>Hypertexto</h3>
+        <p>Es una estructura no secuencial que permite,enlazar y
+            compartir información de diversas fuentes por medio de
+            enlaces.
+        </p>
+        
+        <div class="enlaces-tema">
+            <a href="Proyecto.html">← Volver al inicio</a>
+            <a href="tema3.html">Siguiente tema →</a>
+        </div>
+
+    </main>
+    <footer class="pie">
+        <p>Daniel Pérez García</p>
+    </footer>
+</body>
+
+</html>
