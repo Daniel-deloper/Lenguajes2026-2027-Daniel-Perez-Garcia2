@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /*  grid-template-columns: 20% auto auto;  */
+        
+          grid-template-columns: 50% 50% 50%; 
+         grid-template-columns: 40% 40% 20%;  
+         
+        
+         /*para comprobar rows le damos una altura */
+          grid-template-rows: 20vh 50vh auto; 
+
+        
+        
+        background-color: #0b612f9a;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 3em;
+        text-align: center;
+      }
+      .item1{
+       background-color: bisque;
+       display: hidden;
+      }
+
+      /*esto es es para comprobar la uncion de dos "celdas"*/
+     /*  .item56{
+        grid-column: 2 / span 2;
+        grid-row: 2;
+      }
+      .item14{
+        grid-column: 1 ;
+        grid-row: 1 / span 2;
+      } */
+      
+      /*esto apra comporobar los contenidos de la celda*/
+     /*  img{
+        float: left;
+        width: 200px;
+        margin: 10px;
+      }
+      .botijo{
+        font-size: 1.3em;
+        padding: 5px;
+      } */
+
+      </style>
+      </head>
+      <body>
+      
+      <h1>Grid </h1>
+      
+      <p>Debe tener unelemento padre con la propiedad <em> Display:grid </em></p>
+      
+      <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+      
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <!-- <div class="grid-item item1 item14">1 y 4</div> -->
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        
+        <!-- <div class="grid-item item56" >5 y 6</div>   -->
+        <!--Si uno dos celdas tengo que quitar un div
+        
+         -->
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <!-- <div class="grid-item botijo"><h2>El botijo</h2><img src="botijo.jpg" alt="">Un botijo es un recipiente de barro cocido poroso, diseñado para beber y conservar fresca el agua. En alfarería se define como vasija de cuerpo esferoide, un asa en su parte superior, y con dos o más orificios </div>  -->
+        
+      </div>
+      
+        
+      </body>
+      <button class="boton-volver" onclick="window.location.href='/Lenguajes de marcas/Primer_Trimestre/proyecto_github/primer-trimestre.html'" >Volver al inicio</button>
+</html>

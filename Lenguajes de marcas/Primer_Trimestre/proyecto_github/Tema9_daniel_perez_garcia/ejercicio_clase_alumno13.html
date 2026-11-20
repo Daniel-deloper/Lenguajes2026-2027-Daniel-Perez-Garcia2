@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #7589b4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px 0;
+      box-sizing: border-box;
+    }
+
+    /* Header centrado moderno */
+    header {
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+      background-color: #4a5f9e;
+      color: white;
+      padding: 20px 0;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .contenedor {
+      border: 2px solid darkblue;
+      width: 600px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: steelblue;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .caja1{
+      width: 250px;
+      height: 150px;
+      background-color: pink;
+    }
+    .caja2 {
+
+      width: 250px;
+      height: 200px;
+    }
+
+    .caja3 {
+      
+      width: 250px;
+      height: 150px;
+      background-color: tomato;
+    }
+
+    .caja4 {
+      width: 250px;
+      height: 100px;
+      background-color: seagreen;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Ejercicio de Clase - Autor</header>
+
+  <div class="contenedor">
+    <div class="fila">
+      <div class="caja caja1">1</div>
+      <div class="caja caja2">2</div>
+      </div>
+      <div class="fila">
+      <div class="caja caja3">3</div>
+      <div class="caja caja4">4</div>
+    </div>
+  </div>
+
+</body>
+<button class="boton-volver" onclick="window.location.href='/Primer_Trimestre/proyecto_github/index.html'" >Volver al inicio</button>
+</html>

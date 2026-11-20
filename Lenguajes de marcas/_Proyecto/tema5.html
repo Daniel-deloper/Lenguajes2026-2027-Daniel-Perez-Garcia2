@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Pérez García">
+    <meta name="description" content="Tema 5: Tablas y formularios">
+    <title>Tema 5 | Tablas y formularios</title>
+    <link rel="stylesheet" href="Estillo.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <h1>Tema<span>5</span></h1>
+            <p>Tablas y formularios</p>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="Proyecto.html">Inicio</a><a href="tema1.html">Tema 1</a><a href="tema2.html">Tema 2</a><a
+                href="tema3.html">Tema 3</a><a href="tema4.html">Tema 4</a><a href="tema5.html" class="activo">Tema
+                5</a><a href="tema6.html">Tema 6</a><a href="tema7.html">Tema 7</a><a href="tema8.html">Tema 8</a><a
+                href="tema9.html">Tema 9</a>
+        </div>
+    </nav>
+    <main class="contenedor contenido-tema">
+        <p class="etiqueta">TEMA 05</p>
+        <h2>Tablas y formularios</h2>
+        <p class="introduccion">Material de estudio organizado a partir del PDF correspondiente. Se conserva el
+            contenido textual del documento y se distribuye por páginas para facilitar su consulta.</p>
+        <section class="pagina">
+            <h2>Página 1</h2>
+            <p>Tablas y formularios</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 2</h2>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>3</p>
+            <h3>2. Tablas</h3>
+            <p>4</p>
+            <h3>2.1. Estructura típica de tabla</h3>
+            <h3>2.2. Atributos colspan y rowspan</h3>
+            <h3>3. Formularios</h3>
+            <p>6</p>
+            <h3>3.1. Método get y post</h3>
+            <p>7</p>
+            <h3>3.2. Atributos comunes</h3>
+            <p>8</p>
+            <h3>3.3. Controles</h3>
+            <p>8</p>
+            <h3>4. Caso práctico 1: “Actividades formativas”</h3>
+            <p>13</p>
+            <h3>5. Caso práctico 2: “Grupo de controles”</h3>
+            <p>14</p>
+            <h3>6. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>15</p>
+            <h3>7. Webgrafía</h3>
+            <p>16 cualquier medio o procedimiento, incluidos la reprografía y el tratamiento informático.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 3</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina03_imagen01.png"
+                        alt="Imagen del tema 5, página 3" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>En temas anteriores, hemos trabajado con numerosas etiquetas que nos han permitido enriquecer el
+                contenido de nuestra página web. En este tema veremos las tablas y los formularios. Con las tablas,
+                podremos tabular información para que se muestre de una manera estructurada, gracias a las filas y a las
+                columnas que las caracterizan y que, visualmente, nos van a proporcionar un contenido más organizado.
+                Por otro lado, los formularios nos permitirán interactuar con el usuario, porque nos permitirán
+                solicitar información que el usuario deberá introducir. La agencia de viajes solicita a WebMalagaDesign
+                que cree un formulario para que los clientes puedan enviarles consultas. Escucha el siguiente audio
+                donde planteamos la contextualización práctica de este tema. Encontrarás su resolución en el apartado
+                «Resumen y resolución del caso práctico de la unidad». Crear tablas en el documento HTML. Conocer las
+                etiquetas para trabajar con tablas. Conocer las etiquetas para crear formularios. https://bit.ly/3fwQO1d
+            </p>
+        </section>
+        <section class="pagina">
+            <h2>Página 4</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina04_imagen01.png"
+                        alt="Imagen del tema 5, página 4" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina04_imagen02.png"
+                        alt="Imagen del tema 5, página 4" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>2. Tablas</h3>
+            <p>Al igual que podemos trabajar con tablas en un procesador de textos para estructurar el contenido en
+                filas y columnas, en HTML también tenemos la posibilidad de crear este elemento. La etiqueta que
+                usaremos es &lt;table&gt;.</p>
+            <p>Podemos diferenciar las siguientes partes en una tabla:</p>
+            <p class="viñeta">• Título (&lt;caption&gt;): con el que identificamos el título de la tabla.</p>
+            <p class="viñeta">• Cabecera (&lt;thead&gt;): se identifican las celdas que van a formar parte de la
+                cabecera de la tabla.</p>
+            <p class="viñeta">• Cuerpo (&lt;tbody&gt;): va a contener las celdas con el contenido de la tabla.</p>
+            <p class="viñeta">• Pie (&lt;tfoot&gt;): celdas que forman el pie de la tabla.</p>
+            <p>Como se observa en la tabla de la figura 1, tanto la cabecera, como el cuerpo, como el pie de tabla,
+                contendrán una o más filas (&lt;tr&gt;), cada una de las cuales estará compuesta por celdas de datos
+                (&lt;td&gt;) o celdas de cabecera (&lt;th&gt;).</p>
+            <p>Por lo tanto, una tabla típica puede ser la siguiente:</p>
+            <p>Por defecto, los navegadores, cuando detectan cabeceras en una tabla, suelen aplicarles un estilo
+                diferente. En este caso, se muestra en negrita. En el siguiente apartado, mostramos cómo se ha realizado
+                esta tabla, que tiene una estructura típica. Se ha aplicado cierto estilo con la etiqueta &lt;style&gt;.
+                No te preocupes porque este código se explicará más adelante, cuando veamos CSS.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 5</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina05_imagen01.png"
+                        alt="Imagen del tema 5, página 5" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina05_imagen02.png"
+                        alt="Imagen del tema 5, página 5" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>2.1. Estructura típica de tabla</h3>
+            <p>Los elementos thead, tbody y tfoot nos sirven para agrupar una o varias filas. Si no necesitamos esta
+                agrupación no es necesario incluirlos, y solo deberíamos indicar filas(&lt;tr&gt;), celdas de
+                datos(&lt;td&gt;) y celdas de cabecera(&lt;th&gt;). Normalmente, las celdas de cabecera(&lt;th&gt;) se
+                muestran en la cabecera(&lt;thead&gt;), pero pueden utilizarse en otros lugares de la tabla, como en
+                este caso, en el que la hemos utilizado en el pie(&lt;tfoot&gt;).</p>
+            <h3>2.1.1. Etiquetas &lt;col&gt; y &lt;colgroup&gt;</h3>
+            <p>Estas etiquetas nos van a permitir agrupar columnas para identificar algunas que tengan un significado
+                especial. Esto nos va a dejar colorear esas columnas para que destaquen del resto cuando le podamos
+                aplicar estilos. Tanto en la figura 5, como en el siguiente enlace, puedes ver su uso con varios
+                ejemplos.</p>
+            <h3>2.2. Atributos colspan y rowspan</h3>
+            <p>Estos atributos nos van a permitir unir celdas tanto horizontal como verticalmente. Cuando queramos unir
+                celdas de manera horizontal usaremos colspan, y cuando la agrupación la necesitemos en vertical,
+                usaremos rowspan. El número que asociemos a esos atributos indicará el número de celdas que queramos
+                unir. Estos atributos están asociados con las etiquetas &lt;td&gt; y &lt;th&gt;.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 6</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina06_imagen01.png"
+                        alt="Imagen del tema 5, página 6" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina06_imagen02.png"
+                        alt="Imagen del tema 5, página 6" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Siguiendo con el ejemplo anterior, si quisiéramos tener una primera fila combinada y una primera columna
+                unida con</p>
+            <p>información común, tal y como se muestra en la siguiente imagen:</p>
+            <p>Tendríamos que codificar el siguiente documento HTML:</p>
+            <h3>3. Formularios</h3>
+            <p>Los formularios nos van a permitir agrupar una serie de controles para recoger información de los
+                usuarios y enviarla a un servidor web para que este procese los datos. Un ejemplo típico sería un
+                formulario de contacto de una página web. La etiqueta que engloba los controles es &lt;form&gt;. Se
+                trata de un elemento de bloque, y puede contener otros</p>
+            <p>elementos HTML además de los propios de los formularios. Los atributos asociados más importantes son:</p>
+            <p class="viñeta">• action: aquí se indica la página web que va a recibir los datos que hemos introducido en
+                el formulario.</p>
+            <p>Normalmente, se trata de una página web dinámica que contendrá un script con un lenguaje de programación
+                del lado del servidor, como podría ser PHP (Hypertext Preprocessor).</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 7</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina07_imagen01.png"
+                        alt="Imagen del tema 5, página 7" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina07_imagen02.png"
+                        alt="Imagen del tema 5, página 7" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina07_imagen03.png"
+                        alt="Imagen del tema 5, página 7" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina07_imagen04.png"
+                        alt="Imagen del tema 5, página 7" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p class="viñeta">• method: se indica de qué manera se va a enviar la información. Puede ser de dos tipos:
+            </p>
+            <p>» get: la información aparece en la propia llamada de la página web; por lo tanto, los datos se pueden
+                ver en la URL. Estos datos no deben ser sensibles, porque serán públicos. Este es el método por defecto,
+                si no se indica ninguno. » post: la información se envía de manera oculta. En los próximos apartados,
+                detallaremos cada uno de los controles incluidos en este ejemplo. Lo importante ahora es conocer el
+                comportamiento de los atributos action y method de form, que provocan, que al clicar el botón «Enviar»,
+                se envíen los datos introducidos al fichero «proceso.php».</p>
+            <h3>3.1. Método get y post</h3>
+            <p>Como observamos en el ejemplo anterior, el fichero que se encuentra en el servidor y que procesará la
+                información enviada desde el cliente es proceso.php. Si utilizo el método de envío get, al hacer clic
+                sobre el botón «Enviar»,</p>
+            <p>observaremos en la dirección URL la siguiente llamada:</p>
+            <p>Como se puede observar, aparece el nombre del fichero del servidor y la información que se ha completado
+                en el formulario. La separación entre el fichero de procesamiento y los campos se hace con el carácter
+                ‘?’. Cuando se envía más de un dato en el formulario, se separan con el carácter ‘&amp;’. En el caso de
+                que el método utilizado sea post, la</p>
+            <p>llamada sería así:</p>
+            <p>Audio 1. “Lenguajes del lado cliente y del lado del servidor” https://bit.ly/3enxKm9</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 8</h2>
+            <p>En este caso, la información viaja oculta y no aparece en la barra del navegador. Por lo tanto, hay que
+                usar post cuando no queramos que los datos enviados sean visibles.</p>
+            <h3>3.2. Atributos comunes</h3>
+            <p>Las etiquetas que pueden utilizarse dentro del formulario dispondrán de atributos comunes aparte de los
+                específicos</p>
+            <p>de cada etiqueta. Los listamos a continuación:</p>
+            <p class="viñeta">• type: indica el tipo de control.</p>
+            <p class="viñeta">• name: identifica al control de manera única.</p>
+            <p class="viñeta">• value: permite dar un valor inicial al control.</p>
+            <p class="viñeta">• required: se indica que el campo es obligatorio. Hasta que no se complete no se podrá
+                enviar el formulario.</p>
+            <p class="viñeta">• size: tamaño del control a la hora de su visualización en el navegador.</p>
+            <p class="viñeta">• maxlength y minlength: se indica la longitud máxima y mínima en caracteres que puedo
+                escribir en un control.</p>
+            <p class="viñeta">• autofocus: se indica qué control es el que tendrá el foco cuando se visualice el
+                formulario.</p>
+            <p class="viñeta">• disabled: permite deshabilitar el control. Aparecerá en un tono gris y no nos permitirá
+                acceder al mismo.</p>
+            <p>Tampoco podrá coger el foco.</p>
+            <p class="viñeta">• readonly: El control no puede ser modificado, aunque sí puede coger el foco.</p>
+            <p class="viñeta">• tabindex: nos permite indica el orden de los controles cuando usamos el tabulador.</p>
+            <h3>3.3. Controles</h3>
+            <p>En este apartado, vamos a detallar los controles que se pueden usar en un formulario e indicaremos sus
+                atributos principales.</p>
+            <h3>3.3.1. Botones</h3>
+            <p>Este tipo de controles nos va a permitir interactuar con el formulario, permitiendo la ejecución de un
+                script, el envío de los datos, o el borrado de los mismos. Control Etiqueta Función Atributo Botón
+                &lt;input&gt; Nos permite crear un botón al que le podremos asociar una funcionalidad, normalmente con
+                Javascript type=”button” Botón de envío &lt;input&gt; Es un tipo de botón especial que nos va a permitir
+                enviar los datos del formulario al fichero de procesamiento en el servidor. type=”submit” Botón de
+                borrado &lt;input&gt; Este botón nos va a permitir borrar toda la información incluida en el formulario
+                y muestra los valores iniciales. Si los controles del formulario no tienen esos valores iniciales los
+                pondrá en blanco. type=”reset” Tabla 1. Tabla 1. Tipos de botones.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 9</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina09_imagen01.png"
+                        alt="Imagen del tema 5, página 9" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina09_imagen02.png"
+                        alt="Imagen del tema 5, página 9" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina09_imagen03.png"
+                        alt="Imagen del tema 5, página 9" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>En los ejemplos de las figuras 13 y 14, al pulsar en el botón «Enviar», se enviarían al servidor los
+                datos introducidos. Al pulsar «Borrar» se dejarían en blanco. En el caso del botón «Hola Mundo», se ha
+                introducido código en Javascript.</p>
+            <p>Míralo en el siguiente vídeo:</p>
+            <h3>3.3.2. Cajas de texto</h3>
+            <p>Este tipo de control nos va a permitir introducir texto que solo ocupe una línea o varias (según la
+                etiqueta que usemos). Vídeo 1. “Uso de botones” https://bit.ly/3fE4Kqt Control Etiqueta Función Atributo
+                Caja de texto alfanumérica &lt;input&gt; Nos permite introducir texto alfanumérico. type=”text”
+                Contraseña &lt;input&gt; Es un tipo especial de caja de texto que cuando escribimos aparecen caracteres
+                tipo *, que nos oculta lo que se está escribiendo. type=”password” Área de texto &lt;textarea&gt; Este
+                control nos va a permitir introducir más de una línea de texto Atributos rows y cols: Indica las filas y
+                columnas iniciales del área de texto, porque se pueden ampliar si arrastramos la esquina inferior
+                derecha de la caja de texto. Tabla 1. Tabla 2. Tipos de cajas de texto.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 10</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina10_imagen01.png"
+                        alt="Imagen del tema 5, página 10" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina10_imagen02.png"
+                        alt="Imagen del tema 5, página 10" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Observa cómo es su comportamiento en el ejemplo siguiente:</p>
+            <h3>3.3.3. Casilla de verificación</h3>
+            <p>Este control nos va a permitir elegir entre varias opciones y poder marcar una o varias. Control Etiqueta
+                Función Atributo Casilla de verificación &lt;input&gt; Permite marcar o desmarcar casillas.
+                type=”checkbox”. checked: se indica si inicialmente se desea que el checkbox esté marcado. En este caso
+                no es necesario seguir la sintaxis atributo=valor. Si queremos que esté marcada la casilla se indica
+                simplemente escribiendo checked. Atributo value: si no se indica un valor con el atributo value se
+                enviaría el valor on. En caso contrario, se enviaría el valor que se haya indicado en value. Si no se
+                marca la casilla, no se enviaría nada. Tabla 1. Tabla 3. Casilla de verificación.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 11</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina11_imagen01.png"
+                        alt="Imagen del tema 5, página 11" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina11_imagen02.png"
+                        alt="Imagen del tema 5, página 11" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>En el ejemplo siguiente, observa cómo se ha usado el control checked para marcar 2 opciones de 3
+                posibles:</p>
+            <h3>3.3.4. Botones radio</h3>
+            <p>Este control nos permite elegir entre varias opciones, normalmente excluyentes. Tabla 1. Tabla 4. Botones
+                de radio. Control Etiqueta Función Atributo Botones de radio &lt;input&gt; Este control normalmente se
+                usa en un grupo de opciones donde se elegirá solo una. Al elegir una opción, el resto se desmarca.
+                type=”radio”. Atributo name: para que los botones radio formen un grupo y las opciones sean excluyentes,
+                el nombre de todos los botones radio tiene que ser el mismo. Atributo value: si no se indica un valor
+                con el atributo value se enviaría el valor on. En caso contrario, se enviaría el valor que se haya
+                indicado en value. Si no se marca la casilla, no se enviaría nada. Atributo checked: se puede utilizar
+                al igual que con las casillas de verificación para marcar una opción.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 12</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina12_imagen01.png"
+                        alt="Imagen del tema 5, página 12" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina12_imagen02.png"
+                        alt="Imagen del tema 5, página 12" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Veámoslo en un ejemplo:</p>
+            <h3>3.3.5. Listas despegables</h3>
+            <p>Nos permite mostrar una lista de opciones cuando pulsamos en el control. Tabla 5. Listas desplegables.
+                Control Etiqueta Función Atributo Lista despegable &lt;select&gt; Mostrar opciones en una lista. Las
+                opciones se tienen que colocar dentro de &lt;select&gt; y se indican con la etiqueta &lt;option&gt;.
+                Atributo size: se asocia a la etiqueta &lt;select&gt; e indica la altura del control. Atributo value: se
+                asocia a la etiqueta &lt;option&gt; e indica el valor de la opción seleccionada. Atributo selected: se
+                asocia a la etiqueta &lt;option&gt; e indica la opción seleccionada por defecto.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 13</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina13_imagen01.png"
+                        alt="Imagen del tema 5, página 13" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina13_imagen02.png"
+                        alt="Imagen del tema 5, página 13" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina13_imagen03.png"
+                        alt="Imagen del tema 5, página 13" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Observa cómo se han utilizado los desplegables tanto en el ejemplo siguiente, como en el vídeo posterior:
+            </p>
+            <h3>4. Caso práctico 1: “Actividades formativas”</h3>
+            <p>Planteamiento: Alberto quiere incluir en la intranet de la empresa una tabla con los horarios de algunos
+                cursos que se quieren impartir.</p>
+            <p>Nudo: se reúne con Gloria y le comenta lo que necesita. La tabla debe contener:</p>
+            <p class="viñeta">• El título de la tabla: ACTIVIDADES FORMATIVAS.</p>
+            <p class="viñeta">• Una segunda fila que contenga la cabecera donde aparecerá el nombre del curso, el
+                horario y las horas</p>
+            <p>de duración.</p>
+            <p class="viñeta">• Introducir los siguientes cursos en el cuerpo de la tabla.</p>
+            <p>» Curso de HTML de 20 horas de 16:00 a 20:00 Vídeo 2. “Uso de listas despegables” https://bit.ly/2USfPMx
+            </p>
+        </section>
+        <section class="pagina">
+            <h2>Página 14</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina14_imagen01.png"
+                        alt="Imagen del tema 5, página 14" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina14_imagen02.png"
+                        alt="Imagen del tema 5, página 14" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>» Curso de CSS de 15 horas de 9:00 a 12:00 » Curso de Javascript de 20 horas de 16:00 a 20:00 » Curso de
+                Jquery de 20 horas, comparte horario con el curso de Javascript.</p>
+            <p class="viñeta">• En el pie de la tabla se debe mostrar el total de horas.</p>
+            <p>Desenlace:</p>
+            <p>Puedes observar una representación de la solución en la figura 24, tal y como se visualizaría en el
+                navegador. El código correspondiente lo encontrarás en el anexo del tema. Solución completa: Lenguaje de
+                marcas-tema5-Anexos</p>
+            <h3>5. Caso práctico 2: “Grupo de controles”</h3>
+            <p>Planteamiento: Gloria, mientras buscaba información en internet, ha visto en algunas páginas que los
+                controles de un formulario se pueden agrupar. Nudo: se lo comenta a Alberto y este le dice que haga un
+                pequeño manual de cómo se haría, incluyendo un ejemplo. Desenlace: un grupo de controles permite agrupar
+                los controles que podemos incluir en un formulario, de acuerdo</p>
+            <p>al siguiente comportamiento:</p>
+            <p>Puedes observar una representación de la solución del caso en la figura 25, tal y como se visualizaría en
+                el navegador. El código correspondiente lo encontrarás en el anexo del tema. Solución completa: Lenguaje
+                de marcas-tema5-Anexos Control Etiqueta Función Grupo de controles &lt;fieldset&gt; Permite agrupar
+                controles. En el navegador se mostrarán rodeados de una línea y se mostrará el título que le asignemos a
+                ese grupo de controles. La primera etiqueta que hay que incluir en el grupo es &lt;legend&gt;, que dará
+                el título al grupo de controles. Tabla 1. Tabla 6. Grupo de controles.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 15</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema5/tema5_pagina15_imagen01.png"
+                        alt="Imagen del tema 5, página 15" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>6. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>En este tema, hemos trabajado con tablas y formularios. Las tablas nos permiten estructurar el contenido
+                en filas y podemos destacar algunas celdas para que formen parten de la cabecera y del pie de la tabla.
+                Por otro lado, los formularios nos permiten recabar información del usuario y enviar esos datos al
+                servidor para su procesamiento. Para ello, se utilizan lenguajes del lado del servidor como PHP.
+                Resolución del caso práctico de la unidad Una de las visualizaciones que puede adoptar el formulario
+                encargado por el cliente Sol y Mar es la que se muestra en la figura 27. El código correspondiente lo
+                encontrarás en el anexo del tema. Solución completa: Lenguaje de marcas-tema5-Anexos FORMULARIOS Metodo
+                get Metodo post Controles Fieldset TABLAS &lt;colspan&gt; &lt;rowspan&gt; TABLAS Y FORMULARIOS</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 16</h2>
+            <h3>7. Webgrafía</h3>
+            <p>Escuela de HTML: W3schools. Tecnología web para desarrolladores: Mdn. World Wide Web Consortium (W3C).
+                W3C. Referencia y novedades HTML. Html Living Standard</p>
+        </section>
+        <div class="enlaces-tema"><a href="tema4.html">← Tema anterior</a><a href="tema6.html">Siguiente tema →</a>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>Daniel Pérez García</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de estudiantes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+          rel="stylesheet">
+    <meta name="”author”" content="”Daniel”" />
+    <style>
+        body {
+            font-family: Handwriting, 'Handlee', cursive;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        
+        td:first-child {
+            font-family: monospace;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        
+        tbody tr:hover {
+            background-color: #a8d8ff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Tabla de estudiantes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Curso</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Ana</td>
+                <td>García López</td>
+                <td>1º DAW</td>
+                <td>8.5</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Carlos</td>
+                <td>Martínez Ruiz</td>
+                <td>1º DAW</td>
+                <td>7.2</td>
+            </tr>
+
+            <tr>
+                <td>003</td>
+                <td>Lucía</td>
+                <td>Fernández Díaz</td>
+                <td>2º DAW</td>
+                <td>9.1</td>
+            </tr>
+
+            <tr>
+                <td>004</td>
+                <td>David</td>
+                <td>Pérez Sánchez</td>
+                <td>2º DAW</td>
+                <td>6.8</td>
+            </tr>
+
+            <tr>
+                <td>005</td>
+                <td>María</td>
+                <td>Gómez Torres</td>
+                <td>1º DAM</td>
+                <td>9.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<button class="boton-volver" onclick="window.location.href='/Lenguajes de marcas/Primer_Trimestre/proyecto_github/primer-trimestre.html'" >Volver al inicio</button>
+</html>

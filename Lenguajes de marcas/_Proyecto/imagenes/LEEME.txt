@@ -1,0 +1,8 @@
+IMÁGENES EXTRAÍDAS DE LOS PDF
+
+Cada subcarpeta contiene las imágenes del PDF del tema correspondiente.
+Los nombres indican el tema, la página original del PDF y el orden de aparición.
+Las páginas HTML cargan estas imágenes desde la carpeta imagenes y las muestran
+justo después del encabezado de la página del PDF a la que pertenecen.
+
+Carpetas: tema1, tema2, tema3, tema4, tema5, tema6, tema7, tema8 y tema9.

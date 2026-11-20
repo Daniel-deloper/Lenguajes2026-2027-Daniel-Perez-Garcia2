@@ -1,0 +1,12 @@
+========================================================================================================================
+                                            FALLOS DETECTADOS
+========================================================================================================================
+========================================================================================================================
+-AÑADIR IMAGENES.
+-AÑADIR JAVASCRIP PARA UNA VERSION MEJORADA.
+-CAMBIO DE LOS TITULOS DE LOS TEMAS POR LOS REALES.
+-Y CADA PARTE DE LOS CODIGOS DE CSS Y JAVASCRIP SEPARADOS Y EN DISTINTOS ARCHIVOS CON SUS RUTAS PARA LA FUNCIONALIDAD
+CORRECTA Y ORDENADA PARA UNA VERSION MEJORADA.
+CAMBIAR LOS ICONOS POR LOS CODIGOS
+========================================================================================================================
+

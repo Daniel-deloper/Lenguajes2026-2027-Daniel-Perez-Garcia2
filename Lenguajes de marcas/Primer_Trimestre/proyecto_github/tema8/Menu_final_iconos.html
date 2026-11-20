@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Iconos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="”author”" content="”Daniel”" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        
+        h2 {
+            margin: 20px 0 10px;
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+        }
+
+        nav ul li a i {
+            font-size: 38px; 
+            margin-bottom: 5px;
+        }
+
+         .boton-volver {
+            margin-top: 20px;
+            padding: 10px 18px;
+            background-color: #4a4eff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+        }
+
+        .boton-volver:hover {
+            transform: scale(1.05);
+            background-color: #373cff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>MENU DE ICONOS</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Perfil</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>Mensajes</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Ajustes</a></li>
+            <li><a href="#"><i class="fas fa-bell"></i>Notificaciones</a></li>
+            <li><a href="#"><i class="fas fa-map"></i>Mapa</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i>Tienda</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i>Ayuda</a></li>
+            
+        </ul>
+    </nav>
+
+    <footer>
+       Autor: Daniel
+    </footer>
+</body>
+<button class="boton-volver" onclick="window.location.href='/Lenguajes de marcas/Primer_Trimestre/proyecto_github/primer-trimestre.html'" >Volver al inicio</button>
+</html>

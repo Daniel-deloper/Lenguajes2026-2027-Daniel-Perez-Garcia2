@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="”author”" content="”Daniel”" />
-    <title>Tema 2 | HTML</title>
+    <meta name="author" content="Daniel Pérez García">
+    <meta name="description" content="Tema 2: Introducción al documento HTML">
+    <title>Tema 2 | Introducción al documento HTML</title>
     <link rel="stylesheet" href="Estillo.css">
 </head>
 
@@ -13,123 +14,354 @@
     <header class="cabecera">
         <div class="contenedor">
             <h1>Tema<span>2</span></h1>
-            <p>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+            <p>Introducción al documento HTML</p>
         </div>
     </header>
     <nav class="navegacion">
         <div class="contenedor">
-            <a href="Proyecto.html">Inicio</a>
-            <a href="tema1.html">Tema 1</a>
-            <a href="tema2.html" class="activo">Tema 2</a>
-            <a href="tema3.html">Tema 3</a>
-            <a href="tema4.html">Tema 4</a>
-            <a href="tema5.html">Tema 5</a>
-            <a href="tema6.html">Tema 6</a>
-            <a href="tema7.html">Tema 7</a>
-            <a href="tema8.html">Tema 8</a>
-            <a href="tema9.html">Tema 9</a>
+            <a href="Proyecto.html">Inicio</a><a href="tema1.html">Tema 1</a><a href="tema2.html" class="activo">Tema
+                2</a><a href="tema3.html">Tema 3</a><a href="tema4.html">Tema 4</a><a href="tema5.html">Tema 5</a><a
+                href="tema6.html">Tema 6</a><a href="tema7.html">Tema 7</a><a href="tema8.html">Tema 8</a><a
+                href="tema9.html">Tema 9</a>
         </div>
     </nav>
-
     <main class="contenedor contenido-tema">
-
         <p class="etiqueta">TEMA 02</p>
-
         <h2>Introducción al documento HTML</h2>
+        <p class="introduccion">Material de estudio organizado a partir del PDF correspondiente. Se conserva el
+            contenido textual del documento y se distribuye por páginas para facilitar su consulta.</p>
+        <section class="pagina">
+            <h2>Página 1</h2>
+            <p>Introducción al documento HTML</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 2</h2>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>3</p>
+            <h3>2. El lenguaje de marcas HTML</h3>
+            <p>4</p>
+            <h3>2.1. Atributos y comentarios</h3>
+            <p>5</p>
+            <h3>2.2. Elementos HTML</h3>
+            <p>6</p>
+            <h3>3. Caso práctico 1: “Atributos de la etiqueta IMG”</h3>
+            <p>7</p>
+            <h3>4. Versiones de HTML</h3>
+            <p>7</p>
+            <h3>4.1. Navegadores y HTML</h3>
+            <p>8</p>
+            <h3>4.2. Diferencia entre HTML y XHTML</h3>
+            <p>8</p>
+            <h3>5. Caso práctico 2: “Validación de fichero XHTML”</h3>
+            <p>9</p>
+            <h3>6. Herramientas de diseño web</h3>
+            <p>10</p>
+            <h3>7. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>11</p>
+            <h3>8. Webgrafía</h3>
+            <p>12 cualquier medio o procedimiento, incluidos la reprografía y el tratamiento informático.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 3</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina03_imagen01.png"
+                        alt="Imagen del tema 2, página 3" loading="lazy">
 
-        <h3>Objetivo general</h3>
-        <p>
-        <ul>
-            <li>Conocer la sintaxis de HTML.</li>
-            <li>Identificar elementos del documento HTML.</li>
-            <li>Concepto de hypertexto</li>
-            <li>Estructura de un sitio web</li>
-        </ul>
-        </p>
-
-        <h3>¿Qué es HTML?</h3>
-        <h4>HTML (HyperText Markup Language)</h4>
-        <p>Es el lenguaje de marcas más extendido y la base del World Wide Web</p>
-        <ul>
-            <li>Usa las extensiones .html y .htm</li>
-        </ul>
-
-        <h3>Modelo cliente-servidor</h3>
-        <p>
-        <ul>
-            <li>HTTP</li>
-            <li>URL</li>
-            <li>HTML</li>
-        </ul>
-        </p>
-
-        <h3>Editores y Navegadores</h3>
-        <p>
-        <ul>
-            <li>Editores</li>
-            <p>Sisrven para crear página</p>
-            <li>Navegaroes</li>
-            <p>Sirven para visualizar las páginas</p>
-        </ul>
-        </p>
-
-        <h3>Conceptos HTML fundamentales</h3>
-
-        <h3>Ejemplo de HTML</h3>
-        <div class="bloque-codigo">
-            <pre><code>&lt;h1&gt;Las etiquetas&lt;/h1&gt;
-            <p><ul><li>Etiquetas siempre emparejadas<pre><code>&lt;p&gt;texto&lt;/p&gt;</li>
-                    <li>El símbolo / es el cierre.</li>
-                    <li>Los espacios en blanco no aportan NADA</li>
-                    <li>Las líneas en blanco no aportan NADA</li>
-                    <li>Las etiquetas se pueden animar</li>
-                    <li>Hay etiquetas que no necesitan cerrarse</li>
-                    <li>Las etiquetas pueden tener atributos</li>
-                    </div>
-                </ul>
-            </p>
-        
-
-        <h3>Los atributos</h3>
-        <div class="bloque-codigo">
-        <pre><code>&lt;img src="imagen.jpg" alt="Texto"&gt;
+                </figure>
             </div>
-        <p>
-            <ul>
-                <li>Especifican una caracteristica de la etiqueta</li>
-                <li>GENERALES (por ejemplo id o class). Para todas las etiquetas</li>
-                <li>ESPECIFICOS (src, witdh, height). Según tipo de etiqueta</li>
-            </ul>
-        </p>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>El lenguaje HTML es aquel que entienden los navegadores y el que viaja a través de la red. Con este
+                lenguaje, se crean los documentos HTML que se almacenarán en el servidor web para que puedan ser
+                accesibles en la red de redes (Internet). Es muy importante conocer las características y las
+                posibilidades que ofrece este lenguaje de cara a realizar un proyecto acorde con las necesidades que se
+                planteen en el diseño web. A continuación, vamos a plantear un caso práctico, en el cual los
+                protagonistas son Alberto y Gloria. Su objetivo es que nos ayude a aproximarnos de forma práctica a la
+                teoría de este tema. Alberto y Gloria son dos personajes que nos van a acompañar a lo largo del curso.
+                Ellos trabajan en la empresa Web Málaga Design y en su web puedes ver a qué se dedican. Escucha el
+                siguiente audio donde planteamos la contextualización práctica de este tema. Encontrarás su resolución
+                en el apartado «Resumen y resolución del caso práctico de la unidad». Conocer el lenguaje HTML y sus
+                características. Identificar los elementos que componen un documento HTML. Diferenciar entre etiquetas,
+                atributos y elementos. Conocer las versiones de HTML y saber las diferencias con XHTML. documento HTML”
+                https://bit.ly/2XaIPAG</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 4</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina04_imagen01.png"
+                        alt="Imagen del tema 2, página 4" loading="lazy">
 
-        <h3>Los elementos. Sintaxis de HTML</h3>
-        <div class="bloque-codigo">
-            <pre><code>&lt;a href="contenido/archivo1.html"&gt;Archivo1&lt;/a&gt;
+                </figure>
+            </div>
+            <h3>2. El lenguaje de marcas HTML</h3>
+            <p>El lenguaje de marcas HTML (HyperText Markup Language) nos permite crear páginas web que se podrán
+                visualizar en un navegador web como Chrome o Mozilla. Las páginas webs estarán alojadas en un servidor,
+                y podremos acceder a ellas a través de una URL (Uniform Resource Locator). Esta URL es la que tenemos
+                que indicar en el navegador para acceder al servidor y descargarnos una página web en nuestro navegador,
+                que en este caso es el cliente, ya que este modelo responde a la filosofía cliente-servidor. Las
+                etiquetas que podremos utilizar en el documento HTML deben escribirse entre los símbolos &lt; y &gt;, y
+                siempre deben estar emparejadas (es decir, debe tener una etiqueta de apertura y otra de cierre). La
+                etiqueta de cierre se indica con el carácter barra (/). Código 1. Sintaxis para delimitar un párrafo.
+            </p>
+            <p>Cuando se trabaja con HTML, hay que tener en cuenta que:</p>
+            <p class="viñeta">• Existen algunas de estas que no requieren de etiqueta de cierre, como por ejemplo
+                &lt;hr&gt;, que se utiliza para</p>
+            <p>mostrar una línea horizontal; o &lt;img&gt; para visualizar imágenes. En líneas generales, las etiquetas
+                conseguirán modificar el aspecto visual del texto, aunque existen etiquetas que no marcan ningún estilo.
+            </p>
+            <p class="viñeta">• No diferencia entre mayúsculas y minúsculas. Por lo tanto, da igual indicar &lt;p&gt; o
+                &lt;P&gt;. Sin embargo, es una</p>
+            <p>buena práctica poner las etiquetas en minúsculas.</p>
+            <p class="viñeta">• Algunas etiquetas pueden anidarse, pero existen ciertas limitaciones en cuanto al tipo
+                de etiquetas y al nivel</p>
+            <p>de anidamiento. Código 2. Mostrar en negrita una palabra dentro de un párrafo.</p>
+            <p class="viñeta">• Un salto de línea, los espacios en blanco y los tabuladores no aportan nada en la
+                visualización final del</p>
+            <p>documento HTML, o sea, que el navegador los pasa por alto. Código 3. Códigos que muestran lo mismo en el
+                navegador. &lt;p&gt;nombre de párrafo&lt;/p&gt; &lt;p&gt;nombre de&lt;b&gt;párrafo&lt;/b&gt;&lt;/p&gt;
+                &lt;p&gt;Esto es un ejemplo&lt;/p&gt; &lt;p&gt;Esto es un ejemplo&lt;/p&gt;</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 5</h2>
+            <h3>2.1. Atributos y comentarios</h3>
+            <p>Las etiquetas de apertura pueden contener un atributo o varios, los cuales nos permitirán indicar alguna
+                característica de dicha etiqueta. Existen atributos generales para todas las etiquetas y hay otros que
+                son específicos para cada una.</p>
+            <p>Los atributos tendrán un valor que debemos indicar entre comillas. La sintaxis sería la siguiente:</p>
+            <p>Código 4. Ejemplo de uso de la etiqueta &lt;img&gt;. En este ejemplo, se utiliza la etiqueta &lt;img&gt;
+                para indicar que queremos incluir una imagen con el atributo src, el cual hacer referencia al lugar
+                donde se encuentra el fichero que contiene la imagen; con el atributo alt tendremos cierta información
+                que se mostrará en el navegador cuando haya problemas a la hora de mostrar la imagen indicada. A
+                continuación, mencionamos algunos atributos que se usan con frecuencia en HTML, aparte de los ya
+                comentados, y en el siguiente enlace se puede acceder a una lista completa de atributos. La página web
+                puede incluir comentarios que nos servirán para describir/documentar las partes que la componen. Esto es
+                de suma utilidad cuando se trabaja con un grupo de personas o cuando retomamos el trabajo meses después.
+                Los comentarios no se muestran en el navegador, se pueden incluir en cualquier parte del documento y
+                deben estar incluidos entre los caracteres &lt;! - - y - - &gt;. Código 5. Ejemplo de comentario.
+                Atributo Función disabled Permite deshabilitar un elemento de un formulario en HTML. href Se indica la
+                dirección web para un enlace. id Se identifica de manera única un elemento del documento HTML. style
+                Indica el estilo que se quiere aplicar a una etiqueta de HTML. title Se indica información extra sobre
+                una etiqueta. Tabla 1. Atributos más frecuentes. &lt;etiqueta atributo=”valor_de_atributo”&gt; &lt;img
+                src=”andalucia_bandera.gif” alt=”Andalucia”&gt; &lt;! - - Esto es un ejemplo de comentario - - &gt;
+                &lt;p&gt;Apartado de atributos y comentarios&lt;/p&gt;</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 6</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina06_imagen01.png"
+                        alt="Imagen del tema 2, página 6" loading="lazy">
+
+                </figure>
+            </div>
+            <h3>2.2. Elementos HTML</h3>
+            <p>Además de etiquetas y atributos, en HTML nos encontramos con el concepto de elemento, que une etiquetas y
+                contenido. Hay ocasiones en las que nos encontramos algunos textos en los que se habla de «etiqueta» y
+                «elemento» como si fueran lo mismo, y no es así. Un elemento es más que una</p>
+            <p>etiqueta, porque está formado por:</p>
+            <p class="viñeta">• Etiqueta de apertura</p>
+            <p class="viñeta">• Cero, uno o más atributos</p>
+            <p class="viñeta">• Información encerrada entre las etiquetas</p>
+            <p class="viñeta">• Etiqueta de cierre</p>
+            <p>Este esquema representa un elemento de HTML, pues consta de una etiqueta de apertura (&lt;p&gt;), un
+                atributo (class), el valor del atributo (“tipoclase”), contenido (“Este es el texto que quiero incluir”)
+                y una etiqueta de cierre (&lt;/p&gt;).</p>
+            <p>Los elementos HTML se pueden clasificar en dos grupos:</p>
+            <p class="viñeta">• En línea: solo ocupa el espacio necesario según su contenido. Por ejemplo, los enlaces
+                son elementos en línea.</p>
+            <p class="viñeta">• De bloque: estos elementos siempre van a comenzar en una nueva línea y van a ocupar el
+                espacio hasta el</p>
+            <p>final de la línea, aunque su contenido no necesite llegar hasta el final. Por ejemplo, un párrafo es un
+                elemento de bloque. En el siguiente enlace podrás encontrar un listado completo de los elementos HTML en
+                línea y en bloque. Video 1. “Elementos en línea y elementos en bloque” https://bit.ly/36FRGNT</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 7</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina07_imagen01.png"
+                        alt="Imagen del tema 2, página 7" loading="lazy">
+
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina07_imagen02.png"
+                        alt="Imagen del tema 2, página 7" loading="lazy">
+
+                </figure>
+            </div>
+            <h3>3. Caso práctico 1: “Atributos de la etiqueta IMG”</h3>
+            <p>Planteamiento: Gloria comienza a realizar la página web encargada, pero no recuerda bien cómo se usaban
+                los atributosni si la etiqueta img, además de los atributos indicados en los apuntes, dispone de algunos
+                más. Nudo: Deberá investigar si la etiqueta img tiene más atributos y si son útiles para el desarrollo
+                de la web. Gloria tiene que incluir varias imágenes en la página web y debe averiguar aspectos como
+                tamaño, estilo, etc.</p>
+            <p>Desenlace: Tras consultar el contenido de la asignatura y buscar en Internet, Gloria encuentra esta
+                información:</p>
+            <p>La etiqueta img dispone de los siguientes atributos:</p>
+            <p class="viñeta">• alt: indica un texto alternativo a la imagen.</p>
+            <p class="viñeta">• src: indica la URL donde se encuentra la imagen.</p>
+            <p class="viñeta">• height: indica la altura de la imagen en píxeles.</p>
+            <p class="viñeta">• width: indica el ancho de la imagen en píxeles.</p>
+            <p class="viñeta">• style: se indica el estilo que le quiero aplicar. Este es un atributo general que
+                también se puede utilizar en</p>
+            <p>otras etiquetas. Los dos primeros atributos ya lo conocíamos, pero el resto son nuevos y nos van a
+                permitir indicar el tamaño de la imagen en la web o el estilo que queremos aplicar. Con esta
+                información, Gloria ya puede incluir su primera imagen en la web. El código que ha utilizado, así como
+                el resultado, se muestran en las siguientes imágenes.</p>
+            <h3>4. Versiones de HTML</h3>
+            <p>A lo largo de la evolución de internet, HTML también ha evolucionado y se han creado distintas versiones
+                que define el organismo internacional W3C (World Wide Web Consortium). Como comentamos en el tema
+                anterior, la primera versión es de 1991 y la desarrolló Tim Berners-Lee, considerado como el padre de la
+                web. A partir de esa fecha han</p>
+            <p>ido apareciendo las siguientes versiones:</p>
+            <p>Versión Características HTML 2.0 Se publicó en 1995 y se simplificó al máximo su estructura para agilizar
+                su diseño. No soporta tablas. HTML 3.2 Se publicó en 1997 y fue la primera recomendada por la W3C. Ya
+                incluía tablas, applets de Java, y diseños más avanzados. HTML 4.01 Se publicó en 1999 y aportaba
+                novedades, tales como mejorar los formularios, poder añadir scripts, etc. HTML 5 Se publicó en 2014 y
+                aporta nuevas etiquetas, la posibilidad de integrar audio y vídeo directamente sin plugins. Su
+                característica principal es que aporta significado semántico. Tabla 2. Versiones de HTML.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 8</h2>
+            <h3>4.1. Navegadores y HTML</h3>
+            <p>El navegador web es el programa que nos va a permitir visualizar la página web. Es el encargado de
+                interpretar el código HTML que desarrollemos. Por lo tanto, es muy importante que no haya errores para
+                que el navegador muestre nuestro documento HTML sin ningún problema. Existen numerosos navegadores en el
+                mercado, tales como Chrome, Mozilla, Safari, etc. Estos programas han evolucionado mucho y todos aportan
+                extensiones que facilitan el diseño de páginas web. Cuando estamos visualizando una página web podemos
+                acceder a su código HTML pulsando el botón derecho y elegiendo la opción de «Ver código fuente de la
+                página». Te animo a que lo hagas con cualquier página web de Internet. Obtendrás un código fuente como
+                el que te muestro en el siguiente vídeo, donde puedes ver todas las etiquetas que se han utilizado para
+                crear el contenido.</p>
+            <h3>4.2. Diferencia entre HTML y XHTML</h3>
+            <p>Como vimos en el primer tema, XHTML es una adaptación del lenguaje HTML al lenguaje de marcas XML. Por
+                ello, en el esquema aparece como descendiente de HTML.</p>
+            <p>Las restricciones que tiene XHTML con respecto a HTML son las siguientes:</p>
+            <p class="viñeta">• Las etiquetas se tienen que cerrar en el mismo orden en el que se abrieron.</p>
+            <p class="viñeta">• Todos los nombres, tanto de las etiquetas como de los atributos, se deben de escribir en
+                minúsculas.</p>
+            <p class="viñeta">• Los valores de los atributos que se indican en la etiqueta de apertura deben de ir entre
+                comillas.</p>
+            <p class="viñeta">• No está permitido comprimir los atributos.</p>
+            <p class="viñeta">• Las etiquetas de apertura siempre deben tener su etiqueta de cierre.</p>
+            <p>Video 2.”Ver código fuente en el navegador” https://bit.ly/36Iuf6M Audio 1. “HTML y XHTML”
+                https://bit.ly/3cl9YW5 Fig.7. Esquema del origen y evolución</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 9</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina09_imagen01.png"
+                        alt="Imagen del tema 2, página 9" loading="lazy">
+
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina09_imagen02.png"
+                        alt="Imagen del tema 2, página 9" loading="lazy">
+
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina09_imagen03.png"
+                        alt="Imagen del tema 2, página 9" loading="lazy">
+
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina09_imagen04.png"
+                        alt="Imagen del tema 2, página 9" loading="lazy">
+
+                </figure>
+            </div>
+            <p>En la actualidad, existen dos versiones de XHTML, la 1.0 y la 1.1. La versión 1.0 se considera similar a
+                HTML 4.0. Una de las diferencias principales de XHTML con respecto a HTML reside en su declaración en la
+                cabecera. Una</p>
+            <p>declaración tipo sería la siguiente:</p>
+            <p>Podemos ver si un documento XHTML es válido accediendo al servicio online de W3C Markup Validation
+                Service. Si</p>
+            <p>le pasamos el ejemplo mostrado en la figura 7, se obtiene el siguiente resultado:</p>
+            <p>Si se cambia body por BODY, se obtiene el siguiente error que no se tendría con HTML.</p>
+            <h3>5. Caso práctico 2: “Validación de fichero XHTML”</h3>
+            <p>Planteamiento: Alberto necesita buscar una herramienta que no esté online para poder saber si un
+                documento XHTML es válido. Nudo: Investiga la herramienta que indique errores con respecto a las
+                restricciones que debe cumplir un documento XHTML. Es importante que no esté en línea, pues se va a
+                utilizar en un entorno donde no siempre hay acceso a Internet. Desenlace: Alberto se lo comenta a Gloria
+                y ella le dice que ha usado XML Copy Editor, que permite saber si un documento está bien formado. Puede
+                que este software también tenga una herramienta de validación. Gloria piensa que, al estar basado en
+                XML, es muy probable que al pasarle el XHTML permita validarlo como si se tratara de un fichero XML. Se
+                descargan la aplicación y, efectivamente, comprueban que hay una opción de validación. En las siguientes
+                pantallas, mostramos el resultado con el mismo ejemplo utilizado anteriormente. A la hora de abrir el
+                documento,</p>
+            <p>hay que indicar que se trata de un fichero XHTML 1.0, como se muestra en la siguiente imagen:</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 10</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina10_imagen01.png"
+                        alt="Imagen del tema 2, página 10" loading="lazy">
+
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina10_imagen02.png"
+                        alt="Imagen del tema 2, página 10" loading="lazy">
+
+                </figure>
+            </div>
+            <p>Para saber si el documento es válido, hay que pulsar en el botón «validar» que se encuentra en la parte
+                superior del menú.</p>
+            <p>Al pulsar en ese botón obtenemos en la parte inferior el siguiente resultado:</p>
+            <p>Para solucionarlo, habría que poner body en minúscula y se solucionaría el problema.</p>
+            <h3>6. Herramientas de diseño web</h3>
+            <p>En este apartado, vamos a completar las herramientas de edición, comentadas en el primer tema, con
+                herramientas</p>
+            <p>de diseño web y con otros recursos útiles para la creación de nuestras páginas web. Recursos para el
+                diseño web:</p>
+            <p class="viñeta">• Colorzilla: extensión para Chrome que nos permite conocer el código exacto del color de
+                un elemento de una</p>
+            <p>página web, para luego poder utilizarlo en la nuestra.</p>
+            <p class="viñeta">• Google Fonts: bases de tipografías gratuitas que podremos utilizar en nuestros diseños.
+            </p>
+            <p class="viñeta">• WhatFont: te permite averiguar la fuente utilizada en una página web para poder
+                utilizarla en nuestros</p>
+            <p>proyectos.</p>
+            <p class="viñeta">• MockFlow: permite crear un boceto de cómo quiero que quede mi diseño web.</p>
+            <p class="viñeta">• Pixabay: banco de imágenes de calidad.</p>
+            <p class="viñeta">• Iconfinder: la mayor fuente de iconos gratuitos.</p>
+            <p class="viñeta">• Gimp: programa de edición y retoque de imágenes, que nos ayudaran a adaptar las imágenes
+                de nuestra web.</p>
+            <p>Como complemento a las herramientas de edición del primer tema, se añaden dos nuevas que te ayudarán en
+                el diseño web. Video 3.”Recursos para el diseño web” https://bit.ly/3c9gSxf</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 11</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema2/tema2_pagina11_imagen01.png"
+                        alt="Imagen del tema 2, página 11" loading="lazy">
+
+                </figure>
+            </div>
+            <p class="viñeta">• Sublime Text es un editor de texto avanzado y multiplataforma. Permite trabajar con
+                varios documentos a</p>
+            <p>la vez mediante pestañas. El resaltado de sintaxis soporta un gran número de lenguajes, entre ellos HTML
+                y XML.</p>
+            <h3>7. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>En este tema hemos visto las características principales del lenguaje HTML. Hemos hecho una primera
+                aproximación a cómo se deben utilizar las etiquetas y los atributos en el documento HTML. También hemos
+                hecho un recorrido por la evolución de HTML y hemos visto cómo el navegador web nos ayuda en la
+                visualización del código fuente de una página web creada. Más adelante, veremos más herramientas de este
+                tipo. Es importante conocer las diferencias entre HTML y XHTML de cara a elegir un documento u otro. Por
+                último, se han completado las herramientas de edición del tema 1 con herramientas de diseño web.
+                Resolución del caso práctico de la unidad</p>
+            <p>Alberto habla con Gloria y nos comentan:</p>
+            <p>«Gloria, HTML ha ido evolucionando con diferentes versiones a lo largo de los últimos 20 años.
+                Resumiendo, te puedo decir que HTML, XHTML y HTML5 son lenguajes de marcado, y cada uno de ellos dispone
+                de características comunes, pero también aspectos diferentes.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 12</h2>
+            <p>Tanto XHTML como HTML5 se crearon como versiones que mejoraban HTML4. XHTML fue diseñado para incorporar
+                algunas características de XML, útiles para el control de la validación del documento, mientras que con
+                la aparición de HTML5 aparecieron nuevas etiquetas, lo cual dotó de significado semántico a su
+                estructura. Por este motivo, es la versión más adecuada. Lo que tienes que tener claro es que los tres
+                lenguajes son variaciones de HTML, pero incorporan diferentes reglas y características sintácticas. Te
+                recomiendo que comiences por conocer las etiquetas básicas y el funcionamiento principal con HTML y, a
+                medida que vayas entendiendo la filosofía del diseño web, continúes con el aprendizaje de HTML5 debido a
+                su rápido crecimiento y funcionalidad mejorada.”</p>
+            <h3>8. Webgrafía</h3>
+            <p>Escuela de HTML: W3schools. Tecnología web para desarrolladores: Mdn. World Wide Web Consortium (W3C).
+                W3C. Guía de referencia XHTML. Guía</p>
+        </section>
+        <div class="enlaces-tema"><a href="tema1.html">← Tema anterior</a><a href="tema3.html">Siguiente tema →</a>
         </div>
-        <p>
-            <ul>
-                <li>Es la etiqueta + atributos + información</li>
-                <li>En el navegador forman el DOM. (Document Object Mode)</li>
-                <li>Algundos no necesitan cerrarse. Ej &lt;img&gt; &lt;br&gt;</li>
-                <li>Dos tipos:</li>
-                    <ul>
-                        <li>Inline. En línea</li>
-                        <li>Block. De bloque</li>
-                    </ul>
-            </ul>
-        </p>
-
-        <h3>Hypertexto</h3>
-        <p>Es una estructura no secuencial que permite,enlazar y
-            compartir información de diversas fuentes por medio de
-            enlaces.
-        </p>
-        
-        <div class="enlaces-tema">
-            <a href="Proyecto.html">← Volver al inicio</a>
-            <a href="tema3.html">Siguiente tema →</a>
-        </div>
-
     </main>
     <footer class="pie">
         <p>Daniel Pérez García</p>

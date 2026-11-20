@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="”author”" content="”Daniel”" />
+    <title>Cajas</title>
+
+    <style>
+      .boton-volver {
+            margin-top: 20px;
+            padding: 10px 18px;
+            background-color: #4a4eff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 10%;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+        }
+
+        .boton-volver:hover {
+            transform: scale(1.05);
+            background-color: #373cff;
+        }
+      table {
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      .caja {
+        width: 400px;
+        height: 300px;
+      }
+
+      .caja1 {
+        border: 2px dotted black;
+        background-color: antiquewhite;
+        padding-top: 10%;
+        padding-left: 10%;
+      }
+
+      .caja2 {
+        background-color: gold;
+        border-left: 80px;
+        border-color: black;
+        border-style: solid;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        box-sizing: border-box;
+      }
+
+      .caja3 {
+        background-color: salmon;
+        border: 16px solid #b06b5e;
+        border-bottom: 16px solid #8b4a3b;
+        border-right: 16px solid #8b4a3b;
+        border-radius: 25px;
+        border-style: groove;
+        padding: 20px;
+      }
+
+      .caja4 {
+        background-color: rgb(182, 230, 173);
+        border-style: inset;
+        border-width: 30px;
+        border-color: darkgreen;
+        border-bottom-left-radius: 80px;
+        border-top-right-radius: 80px;
+        padding: auto;
+      }
+
+      .caja5 {
+        border: 4px dotted orange;
+        border-radius: 100%;
+        background-color: bisque;
+        width: 450px;
+        height: 450px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 150px;
+        color: rgb(32, 0, 128);
+        font-weight: bold;
+      }
+
+      .caja6 {
+        border-color: darkblue;
+        background-color: lavender;
+        border-width: 30px;
+        border-style: outset;
+        padding-top: 5em;
+        text-align: center;
+      }
+
+      .caja7 {
+        background: linear-gradient(red, yellow);
+        border-color: rgb(255, 0, 0);
+        border-style: solid;
+        border-bottom-width: 10px;
+        padding-top: 5%;
+        text-align: center;
+      }
+
+      .caja8 {
+        border-width: 30px;
+        border-left-color: blue;
+        border-right-color: green;
+        border-top-color: yellow;
+        border-bottom-color: red;
+        border-style: solid;
+      }
+
+      .caja9 {
+        background-color: white;
+        border: 20px double purple;
+        border-radius: 20px;
+        padding: 20px;
+        font-weight: bold;
+        color: purple;
+      }
+      .boton-volver {
+            margin-top: 20px;
+            padding: 10px 18px;
+            background-color: #4a4eff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 10%;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+        }
+
+        .boton-volver:hover {
+            transform: scale(1.05);
+            background-color: #373cff;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div class="caja caja1">
+            Estilo de la caja<br /><br />background-color:antiquewhite;<br />border:dotted
+            black;<br />padding-top: 10%;<br />padding-left: 10%;
+          </div>
+        </td>
+        <td><div class="caja caja2">Contenido de la caja 2</div></td>
+        <td><div class="caja caja3">Contenido de la caja</div></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="caja caja4">
+            Contenido de la caja<br />border-style:inset;
+          </div>
+        </td>
+        <td><div class="caja caja5">?</div></td>
+        <td><div class="caja caja6">Contenido de la caja</div></td>
+      </tr>
+
+      <tr>
+        <td><div class="caja caja7">Contenido de la caja</div></td>
+        <td><div class="caja caja8">Contenido de la caja</div></td>
+        <td><div class="caja caja9">Contenido de la caja</div></td>
+      </tr>
+    </table>
+  </body>
+<button class="boton-volver" onclick="window.location.href='/Lenguajes de marcas/Primer_Trimestre/proyecto_github/primer-trimestre.html'" >Volver al inicio</button>
+</html>

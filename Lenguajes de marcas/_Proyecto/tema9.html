@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Pérez García">
+    <meta name="description" content="Tema 9: Disposición de los elementos HTML. CSS3">
+    <title>Tema 9 | Disposición de los elementos HTML. CSS3</title>
+    <link rel="stylesheet" href="Estillo.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <h1>Tema<span>9</span></h1>
+            <p>Disposición de los elementos HTML. CSS3</p>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="Proyecto.html">Inicio</a><a href="tema1.html">Tema 1</a><a href="tema2.html">Tema 2</a><a
+                href="tema3.html">Tema 3</a><a href="tema4.html">Tema 4</a><a href="tema5.html">Tema 5</a><a
+                href="tema6.html">Tema 6</a><a href="tema7.html">Tema 7</a><a href="tema8.html">Tema 8</a><a
+                href="tema9.html" class="activo">Tema 9</a>
+        </div>
+    </nav>
+    <main class="contenedor contenido-tema">
+        <p class="etiqueta">TEMA 09</p>
+        <h2>Disposición de los elementos HTML. CSS3</h2>
+        <p class="introduccion">Material de estudio organizado a partir del PDF correspondiente. Se conserva el
+            contenido textual del documento y se distribuye por páginas para facilitar su consulta.</p>
+        <section class="pagina">
+            <h2>Página 1</h2>
+            <p>Disposición de los elementos HTML. CSS3</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 2</h2>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>3</p>
+            <h3>2. Disposición de los elementos</h3>
+            <p>4</p>
+            <h3>2.1. Ejemplo de disposición de los elementos</h3>
+            <p>5</p>
+            <h3>3. Posicionamiento flotante</h3>
+            <p>5</p>
+            <h3>4. Caso práctico 1: “Menú horizontal”</h3>
+            <p>6</p>
+            <h3>5. Propiedades CSS3</h3>
+            <p>7</p>
+            <h3>5.1. Bordes redondeados</h3>
+            <p>8</p>
+            <h3>5.2. Sombras</h3>
+            <p>8</p>
+            <h3>5.3. Opacidad</h3>
+            <h3>5.4. Gradientes</h3>
+            <h3>5.5. Fuentes web</h3>
+            <h3>5.6. Multicolumnas</h3>
+            <p>10</p>
+            <h3>5.7. Transformaciones , transiciones y animaciones</h3>
+            <p>10</p>
+            <h3>5.8. Ejemplo propiedades CSS3</h3>
+            <p>11</p>
+            <h3>6. Caso práctico 2: “Viajes más frecuentes”</h3>
+            <p>12</p>
+            <h3>7. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>13</p>
+            <h3>8. Webgrafía</h3>
+            <p>14 cualquier medio o procedimiento, incluidos la reprografía y el tratamiento informático.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 3</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina03_imagen01.png"
+                        alt="Imagen del tema 9, página 3" loading="lazy">
+                </figure>
+            </div>
+            <h3>1. Introducción y contextualización práctica</h3>
+            <p>En temas anteriores hemos detallado la sintaxis CSS. También hemos visto los diferentes selectores y las
+                propiedades más importantes que se pueden utilizar en las reglas CSS. En este tema trataremos el último
+                bloque de propiedades relacionado con la manera en la que podemos ubicar los párrafos, imágenes, o
+                tablas, pero sin seguir la colocación por defecto que tienen estos elementos. Las propiedades CSS3
+                complementan las propiedades básicas de versiones anteriores y dotan, asimismo, de una mayor
+                versatilidad a las páginas web. Planteamiento del caso práctico de la unidad. Alberto está muy
+                preocupado por la situación del Covid-19 y quiere incluir un banner con información sobre el uso de la
+                mascarilla en la web de la empresa WebMalagaDesign. Escucha el siguiente audio donde planteamos la
+                contextualización práctica de este tema. Encontrarás su resolución en el apartado «Resumen y resolución
+                del caso práctico de la unidad». Conocer los diferentes métodos para posicionar elementos HTML en la
+                página web. Conocer algunas propiedades CSS3. https://bit.ly/31DpfQk</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 4</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina04_imagen01.png"
+                        alt="Imagen del tema 9, página 4" loading="lazy">
+                </figure>
+            </div>
+            <h3>2. Disposición de los elementos</h3>
+            <p>Uno de los aspectos fundamentales de CSS es la colocación de los elementos HTML en la página. Como hemos
+                visto en temas anteriores, los elementos se pueden dividir en elementos en línea y elementos en bloque.
+                Por defecto, los elementos en línea aparecerán de izquierda a derecha, mientas que los elementos en
+                bloque se visualizarán de arriba abajo. La propiedad position, por su parte, nos permitirá cambiar la
+                posición de los elementos HTML a lo largo de la página.</p>
+            <p>Los valores que puede tener esta propiedad son:</p>
+            <p class="viñeta">• static: utiliza el orden por defecto.</p>
+            <p class="viñeta">• relative: se puede desplazar el elemento respecto a su posición estática.</p>
+            <p class="viñeta">• absolute: se puede desplazar el elemento respecto a la posición del contenedor padre.
+            </p>
+            <p class="viñeta">• fixed: se comporta como absolute, pero si hacemos scroll en la página, el elemento
+                permanece fijo. Este tipo</p>
+            <p>de valor es muy útil para fijar un menú en la parte superior de la página. En el siguiente enlace puedes
+                practicar los diferentes valores que tiene position. Cuando indicamos un posicionamiento diferente al
+                estático debemos especificar qué desplazamiento queremos aplicar. Para ello, contamos con estas
+                propiedades que pueden tener valores positivos o negativos. Cuando tenemos varios elementos apilados,
+                con la propiedad z-index podemos indicar en qué orden se deben mostrar. Así, el elemento que tenga un
+                valor en z-index mayor, aparecerá en la parte superior del apilamiento. Propiedad Significado Valores
+                top Espacio en la parte superior del elemento auto | tamaño bottom Espacio en la parte inferior del
+                elemento auto | tamaño left Espacio en la parte izquierda del elemento auto | tamaño right Espacio en la
+                parte derecha del elemento auto | tamaño z-index Se indica el orden en el apilamiento auto | orden Tabla
+                1. Posicionamiento del elemento HTML. Audio 1. “Position sticky” https://bit.ly/2VDJ06y</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 5</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina05_imagen01.png"
+                        alt="Imagen del tema 9, página 5" loading="lazy">
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina05_imagen02.png"
+                        alt="Imagen del tema 9, página 5" loading="lazy">
+                </figure>
+            </div>
+            <h3>2.1. Ejemplo de disposición de los elementos</h3>
+            <p>En el siguiente ejemplo, se muestra la disposición de diferentes elementos mediante el uso de las
+                propiedades que hemos visto. Cabe destacar que, en el Código 1, como al párrafo le hemos indicado un
+                z-index de ‘-3’, aparecerá después de las demás cajas, puesto que las cajas, por defecto, tienen
+                asociado un z-index positivo acorde al orden de aparición en la página.</p>
+            <h3>3. Posicionamiento flotante</h3>
+            <p>Existe un tipo de posicionamiento especial que nos va a permitir sacar los elementos HTML del flujo
+                normal, consiguiendo, además, que el resto de elementos que lo rodean fluyan a izquierda o derecha. Para
+                ello se utilizan las propiedades float y clear. Propiedad Significado Valores float El elemento flota a
+                la izquierda o a la derecha none | left | right clear No permite que los elementos floten en la
+                orientación que le indiquemos none | left | right | both Tabla 2. Posicionamiento flotante. propiedad
+                position. Código 1. Uso de la propiedad position.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 6</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina06_imagen01.png"
+                        alt="Imagen del tema 9, página 6" loading="lazy">
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina06_imagen02.png"
+                        alt="Imagen del tema 9, página 6" loading="lazy">
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina06_imagen03.png"
+                        alt="Imagen del tema 9, página 6" loading="lazy">
+                </figure>
+            </div>
+            <p>En el siguiente ejemplo veremos mejor su funcionamiento:</p>
+            <p class="viñeta">• Figura 4. Las cajas se alinean todas a la izquierda(float:left), hasta que llega a la
+                caja 4, que no permite que los</p>
+            <p>elementos fluyan a su alrededor(clear:both) y, por eso, pasa a formar parte de otra línea.</p>
+            <p class="viñeta">• Figura 5. Las cajas se colocarán a la derecha siempre que haya espacio. Al reducir la
+                ventana, como la caja 3</p>
+            <p>ya no cabe a la derecha de la caja 2, pasa a otra línea.</p>
+            <h3>4. Caso práctico 1: “Menú horizontal”</h3>
+            <p>Planteamiento: Alberto está trabajando en el diseño de una web y necesita crear un menú horizontal. Nudo:
+                se lo comenta a Gloria y ella le dice que anteriormente ha creado menús verticales, pero no
+                horizontales. Alberto le comenta que es muy similar y que solo debe fijarse en usar adecuadamente la
+                propiedad float. Alberto le indica a Gloria que el menú debe tener un fondo en negro y que, cuando pase
+                el cursor por encima de las opciones, se ponga un fondo en color chocolate.</p>
+            <p>Las opciones que se deben de mostrar son:</p>
+            <p class="viñeta">• Inicio</p>
+            <p class="viñeta">• Novedades</p>
+            <p>Vídeo 1. “Uso de float y clear” https://bit.ly/2YhYE8Z Código 2. Uso de float y clear. Fig.4.
+                Posicionamiento flotante Fig.4. Posicionamiento flotante cuando se hace la ventana más pequeña.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 7</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina07_imagen01.png"
+                        alt="Imagen del tema 9, página 7" loading="lazy">
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina07_imagen02.png"
+                        alt="Imagen del tema 9, página 7" loading="lazy">
+                </figure>
+            </div>
+            <p class="viñeta">• Contacto</p>
+            <p class="viñeta">• Acerca</p>
+            <p>La opción de ‘Acerca’ debe de estar alineada a la izquierda.</p>
+            <p>Desenlace:</p>
+            <h3>5. Propiedades CSS3</h3>
+            <p>A lo largo de los apartados anteriores, hemos detallado propiedades que, en su mayoría, pertenecen a la
+                versión 2.1, aunque hemos descrito algunas de CSS3, como la selección de elementos por atributos o
+                descendientes n-esimos con la pseudoclase nth-child(). La versión 3 de CSS dispone de nuevas propiedades
+                que aumentan la funcionalidad de la web sin tener que acudir a complementos externos. La versión 3 se
+                revisa continuamente y, para saber si nuestro navegador soporta las nuevas propiedades, se puede acceder
+                al siguiente enlace.</p>
+            <p>Entre las novedades principales podemos destacar las siguientes:</p>
+            <p class="viñeta">• Colocar varias imágenes de fondo</p>
+            <p class="viñeta">• Esquinas redondeadas</p>
+            <p>Código 3. Menú horizontal con el uso de float.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 8</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina08_imagen01.png"
+                        alt="Imagen del tema 9, página 8" loading="lazy">
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina08_imagen02.png"
+                        alt="Imagen del tema 9, página 8" loading="lazy">
+                </figure>
+            </div>
+            <p class="viñeta">• Bordes con imágenes</p>
+            <p class="viñeta">• Sombras</p>
+            <p class="viñeta">• Transparencias</p>
+            <p class="viñeta">• Varias columnas en el contenido</p>
+            <p class="viñeta">• Nuevos posicionamientos de cajas</p>
+            <p class="viñeta">• Nuevos selectores</p>
+            <p class="viñeta">• Transformaciones, transiciones y animaciones</p>
+            <p>En este apartado vamos a describir algunas de estas novedades, pero para una relación detallada de todas
+                ellas, puedes acceder al siguiente enlace.</p>
+            <h3>5.1. Bordes redondeados</h3>
+            <p>Permite crear esquinas redondeadas. Se puede aplicar a todos los bordes o indicar solo los que nos
+                interesen.</p>
+            <p>Las propiedades de cada esquina son:</p>
+            <p class="viñeta">• border-top-left-radius: esquina superior izquierda.</p>
+            <p class="viñeta">• border-top-right-radius: esquina superior derecha.</p>
+            <p class="viñeta">• border-bottom-left-radius: esquina inferior izquierda.</p>
+            <p class="viñeta">• border-bottom-right-radius: esquina inferior derecha.</p>
+            <p>Si lo queremos aplicar a todas las esquinas por igual, podemos utilizar la versión reducida
+                border-radius. El nivel de redondeo se indica en pixeles.</p>
+            <h3>5.2. Sombras</h3>
+            <p>Permite aplicar el efecto de sombra a elementos HTML, incluidos los textos. La propiedad que hay que
+                utilizar es</p>
+            <p>box-shadow y hay que indicarle 5 valores:</p>
+            <p class="viñeta">• Separación horizontal de la sombra</p>
+            <p class="viñeta">• Separación vertical de la sombra</p>
+            <p class="viñeta">• Radio del desenfoque</p>
+            <p class="viñeta">• Distancia de propagación</p>
+            <p class="viñeta">• Color</p>
+            <p>Si queremos aplicar sombras a los textos hay que usar la propiedad text-shadow y, excepto el radio del
+                desenfoque, hay que indicar los mismos valores que con box-shadow. Fig.7. Sombra. Fig.6. Bordes
+                redondeados.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 9</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina09_imagen01.png"
+                        alt="Imagen del tema 9, página 9" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina09_imagen02.png"
+                        alt="Imagen del tema 9, página 9" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>5.3. Opacidad</h3>
+            <p>Gracias a la propiedad opacity podemos indicar el grado de opacidad de los elementos de la página web.
+                Esta propiedad abarca los valores desde la total transparencia (0) hasta la total opacidad (1).</p>
+            <h3>5.4. Gradientes</h3>
+            <p>Permite crear gradientes de colores. Los gradientes pueden ser lineales o radiales, y se indican con las
+                propiedades linear-gradient y radial-gradient, respectivamente.</p>
+            <p>Los parámetros que debemos indicar con la propiedad linear-gradient son:</p>
+            <p class="viñeta">• Dirección: to right | to bottom right | ….</p>
+            <p class="viñeta">• Color de inicio y color final.</p>
+            <p>Y los parámetros de radial-gradient son:</p>
+            <p class="viñeta">• Figura a mostrar: ellipse | circle</p>
+            <p class="viñeta">• Tamaño: closest-side | closet-corner</p>
+            <p class="viñeta">• Posición: la posición de inicio</p>
+            <p class="viñeta">• Color de inicio y color final.</p>
+            <h3>5.5. Fuentes web</h3>
+            <p>Con CSS3 tenemos la posibilidad de utilizar fuentes nuevas para utilizarlas en los documentos web. Para
+                ello se hace</p>
+            <p>uso de la regla @font-face. La sintaxis sería la siguiente:</p>
+            <p>En la cual:</p>
+            <p class="viñeta">• font-family: se indica el nombre de la fuente que luego se usará en reglas CSS.</p>
+            <p class="viñeta">• src: URL donde se encuentra la fuente. Puede estar en local o ser una dirección web.</p>
+            <p class="viñeta">• Font-weight: grosor de la fuente (por ejemplo, normal, negrita, etc).</p>
+            <p class="viñeta">• Font-style: estilo de la fuente, por ejemplo, itálica.</p>
+            <p>@font-face{ font-family: &lt;nombre de la fuente&gt; src: &lt;origen&gt; [font-weight:&lt;peso&gt;]
+                [font-style:&lt;estilo&gt;]} Fig.8. Opacidad de un div sobre otro.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 10</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina10_imagen01.png"
+                        alt="Imagen del tema 9, página 10" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina10_imagen02.png"
+                        alt="Imagen del tema 9, página 10" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina10_imagen03.png"
+                        alt="Imagen del tema 9, página 10" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina10_imagen04.png"
+                        alt="Imagen del tema 9, página 10" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Las fuentes se pueden descargar de Google Fonts. Si no queremos descargar la fuente y optamos por indicar
+                la dirección URL de Google Fonts, tendríamos que acceder al apartado Embed de la fuente elegida de
+                Google Fonts y copiar el enlace que tendremos que incluir en el código de la página web que estamos
+                desarrollando. Para aplicar esa fuente a un elemento HTML tendría que indicarse con la propiedad
+                font-family. En las siguientes figuras se muestran códigos de ejemplo, con descarga y sin ella. En este
+                caso, se enlaza con la fuente Righteous, que es la que se utilizará en todos los h1 de la página.</p>
+            <h3>5.6. Multicolumnas</h3>
+            <p>En CSS3 podamos crear columnas con el texto que tengamos en un párrafo o en un div. Para ello disponemos
+                de las</p>
+            <p>siguientes propiedades:</p>
+            <p class="viñeta">• column-count: indica el número de columnas.</p>
+            <p class="viñeta">• column-gap: indica el hueco entre columnas.</p>
+            <p class="viñeta">• column-rule: indica el ancho, estilo y color de la línea que separa las</p>
+            <p>columnas. Para una referencia completa, puedes acceder al siguiente enlace.</p>
+            <h3>5.7. Transformaciones , transiciones y animaciones</h3>
+            <p>Con CSS3 podemos crear transformaciones en los elementos HTML. Para ello se utiliza la propiedad
+                transform. El valor que tendrá esa propiedad será el método de transformación que realicemos. Entre los
+                más importantes</p>
+            <p>tenemos los siguientes:</p>
+            <p class="viñeta">• translate(x,y): mueve el elemento ‘x’ pixeles a la derecha e ‘y’ pixeles abajo. Si los
+                valores de x e y son</p>
+            <p>negativos, el movimiento será a la izquierda y arriba, respectivamente.</p>
+            <p class="viñeta">• rotate(x): rota el elemento x grados. Por ejemplo, 20deg.</p>
+            <p class="viñeta">• scale(x,y): Escala ‘x’ veces el ancho e ‘y’ veces el alto.</p>
+            <p>Código 5. Uso de la fuente Righteous con descarga. Código 4. Uso de la fuente Righteous sin descarga.</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 11</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina11_imagen01.png"
+                        alt="Imagen del tema 9, página 11" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina11_imagen02.png"
+                        alt="Imagen del tema 9, página 11" loading="lazy">
+                    
+                </figure>
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina11_imagen03.png"
+                        alt="Imagen del tema 9, página 11" loading="lazy">
+                    
+                </figure>
+            </div>
+            <p>Existen otras maneras de crear efectos de movimiento, mediante las transiciones y las animaciones ,por
+                ejemplo, que puedes consultar en los enlaces indicados.</p>
+            <h3>5.8. Ejemplo propiedades CSS3</h3>
+            <p>Veamos a continuación un ejemplo en el que el fondo es una imagen de agua que se repite. Es muy habitual
+                usar</p>
+            <p>patrones y repetirlos para conseguir llenar el fondo:</p>
+            <p>Parte del código asociado se muestra a continuación:</p>
+            <p>El código completo lo puedes ver en el siguiente enlace. Código 6. Código asociado al ejemplo. Vídeo 2.
+                “Propiedades CSS3” https://bit.ly/2NQ6Qr6</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 12</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina12_imagen01.png"
+                        alt="Imagen del tema 9, página 12" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>6. Caso práctico 2: “Viajes más frecuentes”</h3>
+            <p>Planteamiento: A la empresa de Alberto y Gloria le llegan muy a menudo peticiones de diseños web con
+                características similares. Nudo: Alberto plantea crear una plantilla que sirva de punto de partida para
+                realizar los diseños pedidos. Esta plantilla debe tener la siguiente estructura.</p>
+            <p class="viñeta">• Estructura HTML5 con todas las secciones incluidas.</p>
+            <p class="viñeta">• Un título con sombra.</p>
+            <p class="viñeta">• Un menú horizontal con efecto hover.</p>
+            <p class="viñeta">• Sección central con 2 artículos y con sombra.</p>
+            <p class="viñeta">• Cada artículo debe llevar una imagen alineada a la izquierda en el primer artículo y a
+                la derecha en el segundo.</p>
+            <p>Se ha de utilizar la propiedad float.</p>
+            <p class="viñeta">• Sección lateral con enlaces de interés y sombra.</p>
+            <p class="viñeta">• Footer indicando el autor.</p>
+            <p>Desenlace: Puedes ver cómo se visualizaría la solución en el navegador en la siguiente figura, y el
+                código que la implementa, en el anexo del tema. Solución: Anexo del tema</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 13</h2>
+            <div class="galeria-documento">
+                <figure class="imagen-documento"><img src="imagenes/tema9/tema9_pagina13_imagen01.png"
+                        alt="Imagen del tema 9, página 13" loading="lazy">
+                    
+                </figure>
+            </div>
+            <h3>7. Resumen y resolución del caso práctico de la unidad</h3>
+            <p>En este tema, hemos estudiado las posibilidades que ofrece CSS para poder sacar del flujo normal los
+                elementos HTML de nuestra página web. Esos elementos pueden tener una posición fija, relativa y,
+                también, pueden flotar con respecto a otras cajas. Las propiedades CSS3 que hemos explicado en el tema
+                son algunas de las que existen en esta versión y que permiten ampliar las propiedades de versiones
+                anteriores. Entre las últimas novedades cabe destacar las transformaciones, las transiciones y las
+                animaciones. Resolución del caso práctico de la unidad A continuación, se muestra el resultado del
+                banner diseñado por Alberto y Gloria sobre el uso de la mascarilla. Solución: Anexo del tema</p>
+        </section>
+        <section class="pagina">
+            <h2>Página 14</h2>
+            <h3>8. Webgrafía</h3>
+            <p>Open Source Web Design: sitio web que ofrece cientos de plantillas gratuitas con posibilidad de
+                utilizarlas libremente en aplicaciones personales y comerciales. Tutorial de CSS: escuela online de CSS.
+                CSS: referencia CSS.</p>
+        </section>
+        <div class="enlaces-tema"><a href="tema8.html">← Tema anterior</a></div>
+    </main>
+    <footer class="pie">
+        <p>Daniel Pérez García</p>
+    </footer>
+</body>
+
+</html>
